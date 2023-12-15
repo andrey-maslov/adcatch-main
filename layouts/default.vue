@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Header />
+    <CustomHeader />
 
-    <main class="container mx-auto p-4">
+    <main>
       <slot />
     </main>
 
-    <Footer />
+    <CustomFooter />
   </div>
 </template>
 

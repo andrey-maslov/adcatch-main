@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply text-gray-600;
+    }
+}
+
+/* BUTTONS */
+
+.btn {
+    @apply font-bold py-2 px-8 rounded transition uppercase;
+}
+
+.button-primary {
+    @apply bg-primary text-white btn;
+}
+
+.button-primary:hover {
+    @apply bg-primary-hover text-white btn;
+}
+
+.button-primary-outlined {
+    @apply border-2 border-primary border-solid text-primary btn;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2 {
+    @apply font-heading text-6xl
+}

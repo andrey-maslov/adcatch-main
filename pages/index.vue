@@ -1,11 +1,101 @@
 <template>
   <div>
-    main page
+    <section class="main bg-slate-900">
+      <div class="container mx-auto p-40">
+        <p class="font-heading text-2xl text-white">
+          Welcome!
+        </p>
+
+        <h1 class="text-white">
+          Monitor <span class="text-primary">your Ads</span><br>
+          with <span class="text-primary">AD</span>catch
+        </h1>
+
+        <button class="button-primary">
+          Onboard
+        </button>
+
+        <h2 class="text-white">
+          <span class="text-primary">All campaign</span> reports in one platform
+        </h2>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container mx-auto p-40">
+        <h2 class="text-center max-w-2xl mx-auto mb-8">
+          <span class="text-primary">Enhance</span> your <span class="text-primary">ROAS</span> and <span
+            class="text-primary"
+          >achieve</span>
+          your marketing <span class="text-primary">goals</span>
+        </h2>
+
+        <div class="flex justify-between gap-3">
+          <div v-for="feature in features" :key="feature.title" class="w-1/4">
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.content }}</p>
+          </div>
+        </div>
+
+        <!--   IMAGE here     -->
+
+        <button class="button-primary mx-auto block">
+          Start using for free
+        </button>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container mx-auto p-40">
+        <h2 class="text-center max-w-2xl mx-auto mb-8">
+          <span class="text-primary">Save</span> time and <span class="text-primary">hassle</span> by automating the
+          process
+        </h2>
+
+        <div>
+          <p>We are engaged in digital promotion and launch of hundreds of advertising campaigns. </p>
+          <p>
+            Analyzing and comparing various metrics, monitoring KPIs and switching between different ad networks was
+            part of our daily routine. So we decided to launch a platform that will help automate reporting and get
+            online information about any indicators of advertising campaigns.
+          </p>
+          <p>Sign up for AdCatch to optimize your campaigns right now!</p>
+        </div>
+
+        <button class="button-primary mx-auto block">
+          Book a demo
+        </button>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container mx-auto p-40">
+        <h2 class="text-center max-w-2xl mx-auto mb-8">
+          Identify and <span class="text-primary">eliminate</span>
+          wasteful ad <span class="text-primary">spend</span> and
+          <span class="text-primary">improve</span> your <span class="text-primary">ROAS</span>.
+        </h2>
+
+        <!--    TESTIMONIALS here    -->
+
+        <button class="button-primary mx-auto block">
+          Start using for free
+        </button>
+
+        <p class="text-center">
+          (no credit card required)
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-
+const features = [
+  {title: 'Customize reports', content: 'Choose period and indicators according to your tasks'},
+  {title: 'Set KPI’s', content: 'Mark indicators and track their effectiveness online'},
+  {title: 'Track any ad network', content: 'AdCatch supports all the main networks'},
+]
 </script>
 
 <style lang="scss" scoped>
