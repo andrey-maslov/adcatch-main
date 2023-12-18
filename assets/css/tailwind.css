@@ -11,23 +11,45 @@
 /* BUTTONS */
 
 .btn {
-    @apply font-bold py-2 px-8 rounded transition uppercase;
+    @apply text-sm font-bold py-3 px-8 rounded transition uppercase;
+    letter-spacing: 1px;
+    box-sizing: border-box;
 }
 
 .button-primary {
-    @apply bg-primary text-white btn;
+    @apply border border-primary border-solid bg-primary text-white btn;
+    box-shadow: 0 10px 15px 0 #FF3D004D;
 }
 
 .button-primary:hover {
-    @apply bg-primary-hover text-white btn;
+    @apply bg-primary-hover border-primary-hover text-white btn;
 }
 
 .button-primary-outlined {
-    @apply border-2 border-primary border-solid text-primary btn;
+    @apply border border-primary border-solid text-primary btn;
+}
+
+.button-primary-outlined:hover {
+    @apply border-primary-hover text-primary-hover;
 }
 
 /* TYPOGRAPHY */
 
 h1, h2 {
     @apply font-heading text-6xl
+}
+
+h3 {
+    @apply font-heading text-4xl
+}
+
+/* SECTIONS */
+
+.hero {
+    @apply bg-slate-900;
+    background-image: url('../../public/img/hero.jpeg');
+}
+
+.bordered {
+    @apply border-b border-gray-600
 }

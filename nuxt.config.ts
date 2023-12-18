@@ -15,6 +15,7 @@ export default defineNuxtConfig({
         '@element-plus/nuxt',
         '@nuxtjs/eslint-module',
         '@nuxtjs/google-fonts',
+        'nuxt-icon'
     ],
 
     css: [
