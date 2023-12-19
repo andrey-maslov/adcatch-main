@@ -1,11 +1,9 @@
 <template>
   <Swiper
     :effect="'creative'"
-    :grabCursor="true"
-    :navigation="true"
-    :modules="[SwiperEffectCreative, Navigation]"
+    :modules="[SwiperEffectCreative]"
     :loop="true"
-    class="mySwiper"
+    class="testimonialsSwiper"
     :creativeEffect="{
       prev: {
         shadow: false,
@@ -16,7 +14,7 @@
       },
     }"
   >
-    <SwiperSlide v-for="item in items" :key="item.title">
+    <SwiperSlide v-for="item in items" :key="item.name">
       <article class="wrapper">
         <div class="content text-gray-600">
           <img :src="item.avatar" alt="avatar" class="avatar">
@@ -32,11 +30,23 @@
         </div>
       </article>
     </SwiperSlide>
-    ...
-  </swiper>
+    <button @click="swiper.slideNext()">
+      Next
+    </button>
+    <button @click="swiper.slidePrev()">
+      Previous
+    </button>
+  </Swiper>
+  <!-- useSwiper() within a swiper instance -->
 </template>
 
 <script setup>
+
+const swiper = useSwiper()
+setTimeout(() => {
+  console.log(swiper)
+}, 2000)
+
 const items = [
   {
     name: 'Nadia Zelenkova',

@@ -6,9 +6,11 @@
         Book a demo
       </button>
 
-      <button class="button-primary-outlined">
-        Book a demo 2
-      </button>
+      <a href="https://adcatch.pro/#/login">
+        <button class="button-primary-outlined">
+          Login
+        </button>
+      </a>
     </div>
   </div>
 </template>

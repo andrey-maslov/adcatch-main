@@ -11,11 +11,12 @@ export default defineNuxtConfig({
     },
 
     modules: [
+        'nuxt-swiper',
         '@nuxtjs/tailwindcss',
         '@element-plus/nuxt',
         '@nuxtjs/eslint-module',
         '@nuxtjs/google-fonts',
-        'nuxt-icon'
+        'nuxt-icon',
     ],
 
     css: [
