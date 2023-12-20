@@ -1,16 +1,24 @@
 <template>
-  <NuxtLink to="/" class="logo text-3xl font-heading logo">
+  <NuxtLink to="/" class="logo font-heading" :class="size">
     <span class="text-primary">AD</span>
     <span>CATCH</span>
   </NuxtLink>
 </template>
 
 <script setup lang="ts">
-
+defineProps<{
+  size?: 'large' | 'medium' | 'small'
+}>()
 </script>
 
 <style scoped lang="scss">
 .logo {
+  position: relative;
+  bottom: -5px;
   line-height: unset;
+  font-size: 40px;
+}
+.logo.large {
+  font-size: 64px;
 }
 </style>

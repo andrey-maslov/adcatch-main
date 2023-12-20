@@ -36,20 +36,31 @@
 /* TYPOGRAPHY */
 
 h1, h2 {
-    @apply font-heading text-6xl
+    @apply font-heading text-3xl md:text-5xl xl:text-6xl
 }
 
 h3 {
-    @apply font-heading text-4xl
+    @apply font-heading text-2xl md:text-3xl xl:text-4xl
 }
 
 /* SECTIONS */
 
 .hero {
     @apply bg-slate-900;
-    background-image: url('../../public/img/hero.jpeg');
+    background-image: url('/img/hero.jpeg');
 }
 
 .bordered {
     @apply border-b border-gray-600
+}
+
+.section-box {
+    @apply mx-auto px-4 py-10 md:px-10 md:py-20 xl:p-40
+}
+
+/* Testimonials */
+.testimonials-slider {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
 }

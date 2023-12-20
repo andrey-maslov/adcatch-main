@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="hero">
-      <div class="container mx-auto p-40">
+      <div class="container section-box">
         <p class="font-heading text-2xl text-white mb-12">
           Welcome!
         </p>
@@ -21,20 +21,20 @@
       </div>
     </section>
 
-    <section class="features container mx-auto p-40 bordered">
-      <h2 class="text-center max-w-2xl mx-auto mb-20">
+    <section class="features container section-box bordered">
+      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20">
         <span class="text-primary">Enhance</span> your <span class="text-primary">ROAS</span> and <span
           class="text-primary"
         >achieve</span>
         your marketing <span class="text-primary">goals</span>
       </h2>
 
-      <div class="flex justify-between gap-3 mb-20">
-        <div v-for="feature in features" :key="feature.title" class="w-1/4">
-          <h3 class="mb-6">
+      <div class="flex justify-between flex-wrap gap-3">
+        <div v-for="feature in features" :key="feature.title" class="w-full md:w-1/4 mb-4 md:mb-20">
+          <h3 class="mb-4 md:mb-6">
             {{ feature.title }}
           </h3>
-          <p class="text-2xl">
+          <p class="text-xl md:text-2xl">
             {{ feature.content }}
           </p>
         </div>
@@ -52,13 +52,13 @@
       </button>
     </section>
 
-    <section class="container mx-auto p-40 bordered">
-      <h2 class="text-center max-w-2xl mx-auto mb-20">
+    <section class="container section-box bordered">
+      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20">
         <span class="text-primary">Save</span> time and <span class="text-primary">hassle</span> by automating the
         process
       </h2>
 
-      <div class="text-2xl max-w-4xl mx-auto mb-20 leading-8">
+      <div class="text-xl md:text-2xl max-w-4xl mx-auto mb-20 leading-7 md:leading-8">
         <p class="mb-3">
           We are engaged in digital promotion and launch of hundreds of advertising campaigns.
         </p>
@@ -70,13 +70,13 @@
         <p>Sign up for AdCatch to optimize your campaigns right now!</p>
       </div>
 
-      <button class="button-primary mx-auto block">
-        Book a demo
-      </button>
+      <div class="text-center">
+        <DemoBookingDialog />
+      </div>
     </section>
 
-    <section class="container mx-auto p-40">
-      <h2 class="text-center max-w-2xl mx-auto mb-20">
+    <section class="container section-box">
+      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20">
         Identify and <span class="text-primary">eliminate</span>
         wasteful ad <span class="text-primary">spend</span> and
         <span class="text-primary">improve</span> your <span class="text-primary">ROAS</span>.

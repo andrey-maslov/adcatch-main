@@ -3,7 +3,7 @@
     :effect="'creative'"
     :modules="[SwiperEffectCreative]"
     :loop="true"
-    class="testimonialsSwiper"
+    class="testimonials-slider"
     :creativeEffect="{
       prev: {
         shadow: false,
@@ -30,20 +30,11 @@
         </div>
       </article>
     </SwiperSlide>
-    <button @click="swiper.slideNext()">
-      Next
-    </button>
-    <button @click="swiper.slidePrev()">
-      Previous
-    </button>
+    <SwiperControls />
   </Swiper>
-  <!-- useSwiper() within a swiper instance -->
 </template>
 
 <script setup>
-
-const swiper = useSwiper();
-
 const items = [
   {
     name: 'Nadia Zelenkova',
@@ -88,6 +79,7 @@ const items = [
   position: relative;
   background-color: #fff;
   padding: 60px 20px 50px;
+  min-height: 360px;
   border-radius: 20px;
   box-shadow: 0 0 10px 0 #0000001A;
   border: 1px solid #0000001A;
@@ -103,29 +95,10 @@ const items = [
   height: 100px;
 }
 .swiper {
-  width: 1000px;
-  height: 500px;
+  //width: 1000px;
+  //height: 500px;
 }
 .swiper-slide {
   color: #fff;
 }
-.swiper-button-prev {
-  box-shadow: 0 0 10px 0 #0000001A !important;
-  width: 69px !important;
-  height: 69px !important;
-  background-color: #fff;
-}
-
-#mySlider .swiper-button-prev,
-#mySlider .swiper-button-next {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 8px;
-  color: #888888;
-  --swiper-navigation-size: 20px;
-}
-
 </style>

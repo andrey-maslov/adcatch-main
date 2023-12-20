@@ -77,7 +77,8 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 # Custom
 
 - Linting - [eslint config](https://github.com/nuxt/eslint-config)
-- UI Library - [Element-plus](https://element-plus.org/)
+- UI Library - [Element-plus](https://element-plus.org/) ???
 - Styling - [Tailwindcss](https://tailwindcss.nuxtjs.org/examples/basic)
+- Browse icons - [Nuxt-icon](https://icon-sets.iconify.design/tabler/chevron-left/)
 
 - [Element-plus Nuxt starter](https://github.com/element-plus/element-plus-nuxt-starter)
