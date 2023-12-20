@@ -42,10 +42,7 @@
 
 <script setup>
 
-const swiper = useSwiper()
-setTimeout(() => {
-  console.log(swiper)
-}, 2000)
+const swiper = useSwiper();
 
 const items = [
   {
