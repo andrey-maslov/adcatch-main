@@ -52,25 +52,31 @@ const items = [
     name: 'Nadia Zelenkova',
     position: 'CEO at Red Graphic',
     avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
+    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
   },
   {
     name: 'Nadia Zelenkova 2',
     position: 'CEO at Red Graphic 2',
     avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
+    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
   },
   {
     name: 'Nadia Zelenkova 3',
     position: 'CEO at Red Graphic 3',
     avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
+    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
   },
   {
     name: 'Nadia Zelenkova 4',
     position: 'CEO at Red Graphic 4',
     avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
+    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
+  },
+  {
+    name: 'Nadia Zelenkova 5',
+    position: 'CEO at Red Graphic 4',
+    avatar: '/img/avatar-1.png',
+    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
   }
 ]
 </script>
