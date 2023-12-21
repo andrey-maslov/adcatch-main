@@ -11,7 +11,7 @@ const swiper = useSwiper()
   </button>
 </template>
 
-<style>
+<style lang="scss">
 .button-prev,
 .button-next {
   position: absolute;
@@ -23,6 +23,12 @@ const swiper = useSwiper()
   background-color: #fff;
   border-radius: 50%;
   z-index: 100;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 4px 0 #0000001A;
+    background-color: #E3E3E319;
+  }
 }
 
 .button-prev {

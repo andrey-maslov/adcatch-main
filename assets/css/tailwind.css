@@ -4,7 +4,7 @@
 
 @layer base {
     html {
-        @apply text-gray-600;
+        @apply text-text;
     }
 }
 
@@ -33,25 +33,51 @@
     @apply border-primary-hover text-primary-hover;
 }
 
+.button-secondary {
+    @apply border border-black border-solid bg-black text-white btn;
+}
+
+.button-secondary:hover {
+    @apply border border-primary border-solid bg-primary text-white btn;
+}
+
+.button-secondary-outlined {
+    @apply border border-black border-solid text-black btn;
+}
+
+.button-secondary-outlined:hover {
+    @apply border border-primary border-solid text-primary btn;
+}
+
 /* TYPOGRAPHY */
 
 h1, h2 {
-    @apply font-heading text-3xl md:text-5xl xl:text-6xl
+    @apply font-heading
 }
 
 h3 {
     @apply font-heading text-2xl md:text-3xl xl:text-4xl
 }
 
+.header-1,
+.header-2 {
+    @apply font-heading text-3xl md:text-5xl xl:text-[64px];
+    line-height: 52px;
+}
+
 /* SECTIONS */
 
 .hero {
     @apply bg-slate-900;
-    background-image: url('/img/hero.jpeg');
+    background-image: url('/img/hero_bg_opt.jpeg');
+
+    @supports (background-image: url('/img/hero_bg_opt.webp')) {
+        background-image: url('/img/hero_bg_opt.webp');
+    }
 }
 
 .bordered {
-    @apply border-b border-gray-600
+    @apply border-b border-text
 }
 
 .section-box {

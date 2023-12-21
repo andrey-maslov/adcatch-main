@@ -1,16 +1,22 @@
 <template>
-  <div class="flex gap-1 justify-between p-4">
+  <header class="flex gap-1 justify-between items-center px-4 bg-white w-full">
     <CustomLogo />
     <div class="buttons flex items-center gap-2 md:gap-5">
-      <DemoBookingDialog />
-
-      <a href="https://adcatch.pro/#/login">
-        <button class="button-primary-outlined">
-          Login
+      <a href="https://adcatch.pro/#/registration">
+        <button class="button-secondary">
+          Sign up
         </button>
       </a>
+
+      <a href="https://adcatch.pro/#/login">
+        <button class="button-secondary-outlined">
+          Log in
+        </button>
+      </a>
+
+      <DemoBookingDialog />
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

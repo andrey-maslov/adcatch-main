@@ -6,7 +6,7 @@
           Welcome!
         </p>
 
-        <h1 class="text-white mb-12">
+        <h1 class="text-white mb-12 header-1">
           Monitor <span class="text-primary">your Ads</span><br>
           with <span class="text-primary">AD</span>catch
         </h1>
@@ -15,14 +15,14 @@
           Onboard
         </button>
 
-        <h2 class="text-white">
+        <h2 class="text-white header-2">
           <span class="text-primary">All campaign</span> reports in one platform
         </h2>
       </div>
     </section>
 
     <section class="features container section-box bordered">
-      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20">
+      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20 header-2">
         <span class="text-primary">Enhance</span> your <span class="text-primary">ROAS</span> and <span
           class="text-primary"
         >achieve</span>
@@ -43,7 +43,7 @@
       <!--   IMAGE here     -->
       <div class="mb-12">
         <picture>
-          <img src="/img/features.png" alt="Adcatch dashboard screenshot">
+          <img src="/img/features_opt.png" alt="Adcatch dashboard screenshot">
         </picture>
       </div>
 
@@ -53,7 +53,7 @@
     </section>
 
     <section class="container section-box bordered">
-      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20">
+      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20 header-2">
         <span class="text-primary">Save</span> time and <span class="text-primary">hassle</span> by automating the
         process
       </h2>
@@ -76,7 +76,7 @@
     </section>
 
     <section class="container section-box">
-      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20">
+      <h2 class="text-center max-w-2xl mx-auto mb-10 md:mb-20 header-2">
         Identify and <span class="text-primary">eliminate</span>
         wasteful ad <span class="text-primary">spend</span> and
         <span class="text-primary">improve</span> your <span class="text-primary">ROAS</span>.

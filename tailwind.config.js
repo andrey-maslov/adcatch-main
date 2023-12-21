@@ -13,9 +13,15 @@ export default {
       colors: {
         primary: {
           DEFAULT: '#FF3D00', // Your custom primary color
-          hover: '#882201',
+          hover: '#ff6433',
           // Add more states if needed (active, focus, etc.)
         },
+        black: {
+          DEFAULT: '#323337'
+        },
+        text: {
+          DEFAULT: '#646676'
+        }
       },
     },
   },

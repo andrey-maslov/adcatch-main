@@ -3,11 +3,12 @@
     :effect="'creative'"
     :modules="[SwiperEffectCreative]"
     :loop="true"
+    :grabCursor="true"
     class="testimonials-slider"
     :creativeEffect="{
       prev: {
         shadow: false,
-        translate: [0, 0, -400],
+        translate: [0, 0, -100],
       },
       next: {
         translate: ['100%', 0, 0],

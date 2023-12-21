@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-4 md:px-10 xl:px-12 md:py-8 pb-0 bg-zinc-700 text-white">
+  <footer class="px-4 md:px-20 xl:px-36 py-4 md:py-12 xl:py-16 pb-0 bg-black text-white">
     <div class="flex flex-wrap items-end">
       <div class="w-full md:w-1/4 mb-8">
         <div class="mb-8">
@@ -27,20 +27,18 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script setup>
 import CustomLogo from "~/components/CustomLogo.vue";
 
 const contacts = [
-  {icon: '', title: 'facebook', link: ''},
-  {icon: '', title: 'linkedin', link: ''},
-  {icon: '', title: 'envelope', link: ''},
+  {title: 'linkedin', link: ''},
+  {title: 'envelope', link: 'mailto:alex.vorozhun@adcatch.pro'},
 ]
 
 const links = [
-  {title: 'Terms of service', link: '/terms'},
   {title: 'Privacy Policy', link: 'privacy-policy'},
 ]
 
