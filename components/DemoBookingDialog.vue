@@ -5,12 +5,17 @@
 
   <el-dialog
     v-model="dialogVisible"
-    width="30%"
+    width="400px"
     :before-close="handleClose"
+    :lock-scroll="true"
+    :close-on-click-modal="false"
   >
-    <h3 class="font-sans">
-      Product Demo
-    </h3>
+    <div class="p-4 md:p-10 lg:p-20">
+      <h3 class="font-sans">
+        Product Demo
+      </h3>
+      <DemoBookingForm />
+    </div>
   </el-dialog>
 </template>
 
@@ -18,13 +23,17 @@
 import { ref } from 'vue'
 
 const dialogVisible = ref(false)
+// const dialogVisible = ref(true)
 
 const handleClose = (done: () => void) => {
   done()
 }
 </script>
-<style scoped>
-.dialog-footer button:first-child {
-  margin-right: 10px;
+<style lang="scss">
+.el-dialog {
+
+  .el-dialog__header, .el-dialog__body {
+    padding: 0;
+  }
 }
 </style>

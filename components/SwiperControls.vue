@@ -3,10 +3,10 @@ const swiper = useSwiper()
 </script>
 
 <template>
-  <button class="button-next hidden md:inline-block" @click="swiper.slideNext()">
+  <button class="button-next hidden md:inline-block" aria-label="Next slide" @click="swiper.slideNext()">
     <Icon size="31px" :name="`tabler:chevron-right`" />
   </button>
-  <button class="button-prev hidden md:inline-block" @click="swiper.slidePrev()">
+  <button class="button-prev hidden md:inline-block" aria-label="Previous slide" @click="swiper.slidePrev()">
     <Icon size="31px" :name="`tabler:chevron-left`" />
   </button>
 </template>

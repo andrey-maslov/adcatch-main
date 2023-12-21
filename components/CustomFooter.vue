@@ -10,7 +10,12 @@
 
       <div class="md:text-right grow w-full md:w-3/4 mb-8">
         <div class="social-media inline-flex gap-4 mb-8">
-          <a v-for="item in contacts" :key="item.title" :href="item.link">
+          <a
+            v-for="item in contacts"
+            :key="item.title"
+            :href="item.link"
+            :aria-label="`Link to ${item.title}`"
+          >
             <Icon size="31px" :name="`uil:${item.title}`" />
           </a>
         </div>

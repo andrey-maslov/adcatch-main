@@ -18,8 +18,4 @@ export default defineNuxtConfig({
         '@nuxtjs/google-fonts',
         'nuxt-icon',
     ],
-
-    css: [
-        '~/styles/element/index.scss',
-    ],
 })
