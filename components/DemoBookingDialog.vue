@@ -11,9 +11,6 @@
     :close-on-click-modal="false"
   >
     <div class="p-4 md:p-10 lg:p-20">
-      <h3 class="font-sans">
-        Product Demo
-      </h3>
       <DemoBookingForm />
     </div>
   </el-dialog>

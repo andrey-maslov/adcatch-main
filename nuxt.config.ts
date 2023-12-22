@@ -17,5 +17,19 @@ export default defineNuxtConfig({
         '@nuxtjs/eslint-module',
         '@nuxtjs/google-fonts',
         'nuxt-icon',
+        ['nuxt-mail', {
+            message: {
+                to: 'andrei.maslau@gmail.com',
+            },
+            smtp: {
+                host: 'smtp.zoho.eu',
+                port: 465,
+                secure: true,
+                auth: {
+                    user: process.env.EMAIL_SERVER_USER,
+                    pass: process.env.EMAIL_SERVER_PASSWORD
+                },
+            },
+        }]
     ],
 })
