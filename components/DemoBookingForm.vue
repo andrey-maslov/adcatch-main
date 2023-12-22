@@ -42,9 +42,8 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { reactive } from 'vue'
-import {ref} from "vue/dist/vue";
+<script setup>
+import { reactive, ref } from 'vue'
 
 const bookingForm = reactive({
   name: '',
@@ -55,7 +54,7 @@ const bookingForm = reactive({
 
 const formSubmitted = ref(false)
 
-const onSubmit = (e:  any) => {
+const onSubmit = (e) => {
   e.preventDefault();
 }
 </script>
