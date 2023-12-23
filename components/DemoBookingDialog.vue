@@ -6,12 +6,12 @@
   <el-dialog
     v-model="dialogVisible"
     width="400px"
-    :before-close="handleClose"
     :lock-scroll="true"
     :close-on-click-modal="false"
+    destroy-on-close
   >
     <div class="p-4 md:p-10 lg:p-20">
-      <DemoBookingForm />
+      <DemoBookingForm :handle-close="handleClose" />
     </div>
   </el-dialog>
 </template>
@@ -20,10 +20,9 @@
 import { ref } from 'vue'
 
 const dialogVisible = ref(false)
-// const dialogVisible = ref(true)
 
-const handleClose = (done: () => void) => {
-  done()
+const handleClose = () => {
+  dialogVisible.value = false
 }
 </script>
 <style lang="scss">

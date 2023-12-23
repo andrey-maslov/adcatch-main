@@ -1,0 +1,5 @@
+- create mailer.config.ts
+- form validation, errors display and handling
+- meta data template
+- improve mobile markup
+- mobile header? buttons text => icons ?
