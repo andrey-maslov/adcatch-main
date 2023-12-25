@@ -59,6 +59,7 @@
 <script setup lang="ts">
 import {reactive, ref} from 'vue'
 import type {FormInstance, FormRules} from 'element-plus';
+import {convertToTargetTimeZone} from "~/utils/time.utils";
 
 defineProps<{
   handleClose: () => void
@@ -102,7 +103,6 @@ const rules = reactive<FormRules<BookingForm>>({
   company: [
     {required: true, message: 'Please input your company name', trigger: 'blur'},
   ],
-
   dateTime: [
     {
       type: 'date',
@@ -122,17 +122,18 @@ const onSubmit = async (formEl: FormInstance | undefined) => {
 
   await formEl.validate((valid, fields) => {
     if (valid) {
-      mail.send({
+      const targetTimeZone = 'Europe/Tallinn'
+      const payload = {
         from: `"Adcatch Support" <${config.public.emailFrom}>`,
         subject: 'Booking demo request from adcatch.pro',
         text: `User data:
-                user name: ${bookingForm.name},
-                user email: ${bookingForm.email},
-                user company: ${bookingForm.company},
-                user data and time: ${bookingForm.dateTime},`,
-      })
-
-
+                Client name: ${bookingForm.name},
+                Client email: ${bookingForm.email},
+                Client company: ${bookingForm.company},
+                Client preferred data and time (local): ${bookingForm.dateTime},
+                Client preferred data and time (${targetTimeZone}): ${convertToTargetTimeZone(bookingForm.dateTime, targetTimeZone)},`
+      }
+      mail.send(payload)
       formSubmitted.value = true;
     } else {
       console.log('error submit!', fields)

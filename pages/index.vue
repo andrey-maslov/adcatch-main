@@ -84,7 +84,7 @@
 
       <!--    TESTIMONIALS here    -->
       <div class="mb-20">
-        <TestimonialsSlider />
+        <LazyTestimonialsSlider />
       </div>
 
       <button class="button-primary mx-auto block mb-8">

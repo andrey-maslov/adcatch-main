@@ -9,6 +9,7 @@
     :lock-scroll="true"
     :close-on-click-modal="false"
     destroy-on-close
+    lazy
   >
     <div class="p-4 md:p-8 lg:p-12">
       <DemoBookingForm :handle-close="handleClose" />
