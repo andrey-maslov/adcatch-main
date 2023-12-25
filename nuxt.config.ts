@@ -2,6 +2,44 @@
 export default defineNuxtConfig({
     devtools: {enabled: true},
 
+    app: {
+        head: {
+            htmlAttrs: {
+                lang: 'en',
+            },
+            title: 'Monitor your Ads with ADcatch',
+            meta: [
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                {
+                    key: 'description',
+                    name: 'description',
+                    content: 'All campaign reports in one platform',
+                },
+                {
+                    key: 'og:title',
+                    name: 'og:title',
+                    content: 'Monitor your Ads with ADcatch',
+                },
+                {
+                    key: 'og:image',
+                    property: 'og:image',
+                    content: `/img/features_opt.png`,
+                },
+                {
+                    key: 'og:description',
+                    property: 'og:description',
+                    content: 'All campaign reports in one platform',
+                },
+                {
+                    key: 'og:url',
+                    property: 'og:url',
+                    content: 'https://adcatch.pro',
+                },
+            ],
+            link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        }
+    },
+
     googleFonts: {
         display: 'swap',
         families: {
@@ -19,17 +57,23 @@ export default defineNuxtConfig({
         'nuxt-icon',
         ['nuxt-mail', {
             message: {
-                to: 'andrei.maslau@gmail.com',
+                to: process.env.EMAIL_MAIL_TO,
             },
             smtp: {
-                host: 'smtp.zoho.eu',
-                port: 465,
+                host: process.env.EMAIL_SMTP_HOST,
+                port: process.env.EMAIL_SMTP_PORT,
                 secure: true,
                 auth: {
-                    user: process.env.EMAIL_SERVER_USER,
-                    pass: process.env.EMAIL_SERVER_PASSWORD
+                    user: process.env.EMAIL_USER,
+                    pass: process.env.EMAIL_PASSWORD
                 },
             },
         }]
     ],
+
+    runtimeConfig: {
+        public: {
+            emailFrom: process.env.EMAIL_USER,
+        }
+    },
 })

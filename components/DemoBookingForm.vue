@@ -32,11 +32,11 @@
           />
         </el-form-item>
 
-        <el-form-item class="mt-10 text-center w-full">
+        <div class="mt-10 text-center w-full">
           <el-button class="button-submit" @click="onSubmit(bookingFormRef)">
             Submit
           </el-button>
-        </el-form-item>
+        </div>
       </el-form>
     </div>
 
@@ -57,8 +57,8 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
-import type { FormInstance, FormRules } from 'element-plus';
+import {reactive, ref} from 'vue'
+import type {FormInstance, FormRules} from 'element-plus';
 
 defineProps<{
   handleClose: () => void
@@ -85,7 +85,7 @@ const bookingForm = reactive<BookingForm>({
 
 const rules = reactive<FormRules<BookingForm>>({
   name: [
-    { required: true, message: 'Please input your name', trigger: 'blur' },
+    {required: true, message: 'Please input your name', trigger: 'blur'},
   ],
   email: [
     {
@@ -100,7 +100,7 @@ const rules = reactive<FormRules<BookingForm>>({
     },
   ],
   company: [
-    { required: true, message: 'Please input your company name', trigger: 'blur' },
+    {required: true, message: 'Please input your company name', trigger: 'blur'},
   ],
 
   dateTime: [
@@ -113,6 +113,8 @@ const rules = reactive<FormRules<BookingForm>>({
   ],
 })
 
+const config = useRuntimeConfig();
+
 const onSubmit = async (formEl: FormInstance | undefined) => {
   if (!formEl) {
     return;
@@ -121,7 +123,7 @@ const onSubmit = async (formEl: FormInstance | undefined) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
       mail.send({
-        from: '"Adcatch Support" <support@teamconstructor.pro>',
+        from: `"Adcatch Support" <${config.public.emailFrom}>`,
         subject: 'Booking demo request from adcatch.pro',
         text: `User data:
                 user name: ${bookingForm.name},
@@ -129,6 +131,7 @@ const onSubmit = async (formEl: FormInstance | undefined) => {
                 user company: ${bookingForm.company},
                 user data and time: ${bookingForm.dateTime},`,
       })
+
 
       formSubmitted.value = true;
     } else {
@@ -152,8 +155,8 @@ const onSubmit = async (formEl: FormInstance | undefined) => {
     background-color: #FF3D00;
     text-transform: uppercase;
     color: #fff;
-    
-    
+
+
     //:hover {
     //  background-color: #ff6433 !important;
     //}
@@ -163,6 +166,7 @@ const onSubmit = async (formEl: FormInstance | undefined) => {
     }
   }
 }
+
 .demo-booking-content {
   min-height: 422px;
 }

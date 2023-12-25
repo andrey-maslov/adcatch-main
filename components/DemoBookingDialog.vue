@@ -10,7 +10,7 @@
     :close-on-click-modal="false"
     destroy-on-close
   >
-    <div class="p-4 md:p-10 lg:p-20">
+    <div class="p-4 md:p-8 lg:p-12">
       <DemoBookingForm :handle-close="handleClose" />
     </div>
   </el-dialog>
