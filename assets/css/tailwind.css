@@ -11,7 +11,7 @@
 /* BUTTONS */
 
 .btn {
-    @apply text-sm font-bold py-3 px-8 rounded transition uppercase;
+    @apply text-sm font-bold py-3 px-5 md:px-8 rounded transition uppercase;
     letter-spacing: 1px;
     box-sizing: border-box;
     line-height: 1;
@@ -63,7 +63,7 @@ h3 {
 .header-1,
 .header-2 {
     @apply font-heading text-3xl md:text-5xl xl:text-[64px];
-    line-height: 52px;
+    line-height: 0.8;
 }
 
 /* SECTIONS */

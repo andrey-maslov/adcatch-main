@@ -1,5 +1,5 @@
 <template>
-  <button class="button-primary hidden md:inline-block" @click="dialogVisible = true">
+  <button class="button-primary" @click="dialogVisible = true">
     Book a demo
   </button>
 
@@ -18,9 +18,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const dialogVisible = ref(false)
+const dialogVisible = ref(false);
 
 const handleClose = () => {
   dialogVisible.value = false

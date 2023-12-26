@@ -3,12 +3,14 @@ const swiper = useSwiper()
 </script>
 
 <template>
-  <button class="button-next hidden md:inline-block" aria-label="Next slide" @click="swiper.slideNext()">
-    <Icon size="31px" :name="`tabler:chevron-right`" />
-  </button>
-  <button class="button-prev hidden md:inline-block" aria-label="Previous slide" @click="swiper.slidePrev()">
-    <Icon size="31px" :name="`tabler:chevron-left`" />
-  </button>
+  <div class="flex justify-between px-10 md:px-0 md:block">
+    <button class="button-prev" aria-label="Previous slide" @click="swiper.slidePrev()">
+      <Icon size="31px" :name="`tabler:chevron-left`" />
+    </button>
+    <button class="button-next" aria-label="Next slide" @click="swiper.slideNext()">
+      <Icon size="31px" :name="`tabler:chevron-right`" />
+    </button>
+  </div>
 </template>
 
 <style lang="scss">
@@ -37,5 +39,24 @@ const swiper = useSwiper()
 
 .button-next {
   right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-prev,
+  .button-next {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 3px;
+  }
+
+  .button-prev {
+    left: 0;
+  }
+
+  .button-next {
+    right: 0;
+  }
 }
 </style>

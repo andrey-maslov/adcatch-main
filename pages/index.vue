@@ -58,7 +58,7 @@
         process
       </h2>
 
-      <div class="text-xl md:text-2xl max-w-4xl mx-auto mb-20 leading-7 md:leading-8">
+      <div class="text-xl md:text-2xl max-w-4xl mx-auto mb-8 lg:mb-20 leading-7 md:leading-8">
         <p class="mb-3">
           We are engaged in digital promotion and launch of hundreds of advertising campaigns.
         </p>
@@ -83,7 +83,7 @@
       </h2>
 
       <!--    TESTIMONIALS here    -->
-      <div class="mb-20">
+      <div class="mb-8 lg:mb-20 -mx-4 md:mx-0">
         <LazyTestimonialsSlider />
       </div>
 
