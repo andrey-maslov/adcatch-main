@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-20 mx-auto">
+  <div class="container py-8 lg:py-20 px-4 mx-auto">
     <h1>PRIVACY POLICY</h1>
     <p>updated:&nbsp;15&nbsp;March 2021</p>
     <p>This Privacy Policy (hereinafter, the Policy) governs the processing of personal data of Adcatch users and the website with the domain name &ldquo;adcatch.pro&rdquo; (hereinafter referred to as the Services).</p>

@@ -5,7 +5,7 @@
 
   <el-dialog
     v-model="dialogVisible"
-    width="400px"
+    width="360px"
     :lock-scroll="true"
     :close-on-click-modal="false"
     destroy-on-close

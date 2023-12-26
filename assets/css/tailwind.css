@@ -103,5 +103,75 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+}
+
+/* COMMON STYLES primarily for the articles and content pages */
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+/* Paragraphs */
+p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Lists */
+ul,
+ol {
+    display: block;
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 40px;
+}
+
+/* Blockquote */
+blockquote {
+    display: block;
+    margin: 1em 40px;
+}
+
+/* Miscellaneous */
+hr {
+    display: block;
+    margin: 0.5em auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* Default Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table Header Styles */
+th {
+    border: 1px solid #ddd; /* Border color for table header cells */
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2; /* Background color for table header cells */
+}
+
+/* Table Cell Styles */
+td {
+    border: 1px solid #ddd; /* Border color for table cells */
+    padding: 8px;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Background color for even rows */
 }

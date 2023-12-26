@@ -59,10 +59,10 @@
       </h2>
 
       <div class="text-xl md:text-2xl max-w-4xl mx-auto mb-8 lg:mb-20 leading-7 md:leading-8">
-        <p class="mb-3">
+        <p>
           We are engaged in digital promotion and launch of hundreds of advertising campaigns.
         </p>
-        <p class="mb-3">
+        <p>
           Analyzing and comparing various metrics, monitoring KPIs and switching between different ad networks was
           part of our daily routine. So we decided to launch a platform that will help automate reporting and get
           online information about any indicators of advertising campaigns.
