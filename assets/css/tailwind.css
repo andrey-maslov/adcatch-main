@@ -76,6 +76,14 @@ h1, h2, h3, h4, h5 {
     @apply font-heading text-lg md:text-xl
 }
 
+.subheader-1 {
+    @apply max-w-4xl mx-auto mb-8 text-xl leading-7 text-center md:text-2xl lg:mb-20 md:leading-8
+}
+
+.subheader-2 {
+    @apply max-w-4xl mx-auto mb-8 text-xl leading-7 text-center md:text-2xl lg:mb-20 md:leading-8
+}
+
 /* SECTIONS */
 
 .hero {
@@ -100,6 +108,14 @@ h1, h2, h3, h4, h5 {
     position: relative;
     max-width: 900px;
     margin: 0 auto;
+}
+
+
+/* UTILITY */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
 }
 
 /* POLYFILLS */

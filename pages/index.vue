@@ -54,7 +54,8 @@
 
       <div class="flex flex-wrap justify-between gap-3">
         <div v-for="item in integrations" :key="item.title" class="w-full mb-4 md:w-1/4 md:mb-20">
-          <h3 class="mb-4 header-3 md:mb-6">
+          <h3 class="flex items-center mb-4 header-3 md:mb-6">
+            <img :src="item.img" alt="" />
             {{ item.title }}
           </h3>
           <p class="text-lg md:text-xl">
@@ -68,18 +69,54 @@
       </div>
     </section>
 
+    <section class="container section-box bordered">
+      <h2 class="max-w-[1000px] mx-auto mb-10 text-center md:mb-20 header-2">
+        <span class="text-primary">Beyond</span> last-<span class="text-primary">click</span> attribution
+      </h2>
+
+      <p class="subheader-1">
+        Adcatch analyses historical data and determines the actual impact of every digital touch-point.
+      </p>
+
+      <div class="flex flex-wrap gap-3 md:flex-nowrap">
+        <div class="w-full mb-4 md:w-1/2 md:mb-20">
+          <h3>Discover insights on marketing performance:</h3>
+          <ul>
+            <li>how advertising affects your sales</li>
+            <li>how price change correlates with sales</li>
+            <li>how to out-stand your competitors</li>
+            <li>which materials catching customer's eyes</li>
+            <li>what descriptions the most engaging</li>
+            <li>what keywords generate the highest searchability </li>
+          </ul>
+        </div>
+        <div class="w-full mb-4 md:w-1/2 md:mb-20">
+          <h3>Engagement Rate</h3>
+          <picture>
+            <img src="/img/historical.png" alt="Adcatch dashboard screenshot">
+          </picture>
+        </div>
+      </div>
+
+      <p class="text-center">and many more e-commerce insights straight from the box</p>
+
+      <div class="mx-auto mb-8 text-center">
+        <DemoBookingDialog />
+      </div>
+    </section>
+
     <section class="container features section-box bordered">
       <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 header-2">
         All <span class="text-primary">marketing</span> campaigns <span class="text-primary">in one place</span>
       </h2>
 
-      <p class="max-w-4xl mx-auto mb-8 text-xl leading-7 text-center md:text-2xl lg:mb-20 md:leading-8">Seamlessly collect
+      <p class="subheader-1">Seamlessly collect
         data from diverse sources and transform complex data into clear and insightful reports.</p>
 
       <!--   IMAGE here     -->
-      <div class="mb-12">
+      <div class="mb-12 text-center">
         <picture>
-          <img src="/img/features-2.png" alt="Adcatch dashboard screenshot">
+          <img src="/img/features-2.png" class="mx-auto img-responsive" alt="Adcatch dashboard screenshot">
         </picture>
       </div>
 
@@ -88,7 +125,7 @@
           <h3 class="mb-4 md:mb-6">
             {{ feature.title }}
           </h3>
-          <p class="text-xl md:text-2xl">
+          <p class="subheader-1">
             {{ feature.content }}
           </p>
         </div>
@@ -104,10 +141,10 @@
         <span class="text-primary">Advanced</span> audience <span class="text-primary">segmentation</span>
       </h2>
 
-      <div class="max-w-4xl mx-auto mb-8 text-xl leading-7 text-center md:text-2xl lg:mb-20 md:leading-8">
+      <p class="subheader-1">
         Break up your audience based on various criteria, such as demographics, interests, and behavior, to gain deeper
         insights and deliver more relevant messaging.
-      </div>
+      </p>
 
       <div class="flex flex-wrap justify-between gap-3">
         <div v-for="feature in featuresAudience" :key="feature.title" class="w-full mb-4 md:w-1/4 md:mb-20">
@@ -152,15 +189,27 @@ const features = [
 ]
 
 const featuresAudience = [
-  { title: 'Interests', img: 'Send customised reports to your or client’s team' },
-  { title: 'Age&Gender ', img: 'Easily add planned performance and track effectiveness continuously' },
-  { title: 'Geo', img: 'Reveal the most effective ads, best-selling periods and best-matching audience' },
+  { title: 'Interests', img: '' },
+  { title: 'Age&Gender ', img: '' },
+  { title: 'Geo', img: '' },
 ]
 
 const integrations = [
-  { title: 'For Brands', content: 'Track customer’s attention across multiple sales channels and apply the findings to your next marketing campaign', img: '' },
-  { title: 'FOR Sellers ', content: 'Uncover insights from every aspect of your campaigns by tracking ad formats, messaging, devices, locations, time, audience, goals, keywords, bidding strategies, attribution models, conversions and much more.', img: '' },
-  { title: 'FOR agencies', content: 'Empower clients with real-time insights and strengthen your agency-client relationship with transparent marketing', img: '' },
+  {
+    title: 'For Brands',
+    content: 'Track customer’s attention across multiple sales channels and apply the findings to your next marketing campaign',
+    img: '/img/management-people.svg'
+  },
+  {
+    title: 'FOR Sellers ',
+    content: 'Uncover insights from every aspect of your campaigns by tracking ad formats, messaging, devices, locations, time, audience, goals, keywords, bidding strategies, attribution models, conversions and much more.',
+    img: '/img/presentation.svg'
+  },
+  {
+    title: 'FOR agencies',
+    content: 'Empower clients with real-time insights and strengthen your agency-client relationship with transparent marketing',
+    img: '/img/connection.svg'
+  },
 ]
 </script>
 
