@@ -11,23 +11,23 @@
 /* BUTTONS */
 
 .btn {
-    @apply text-sm font-bold py-3 px-5 md:px-8 rounded transition uppercase;
+    @apply px-5 py-5 text-sm font-bold uppercase transition rounded md:px-8;
     letter-spacing: 1px;
     box-sizing: border-box;
     line-height: 1;
 }
 
 .button-primary {
-    @apply border border-primary border-solid bg-primary text-white btn;
+    @apply text-white border border-solid border-primary bg-primary btn;
     box-shadow: 0 10px 15px 0 #FF3D004D;
 }
 
 .button-primary:hover {
-    @apply bg-primary-hover border-primary-hover text-white btn;
+    @apply text-white bg-primary-hover border-primary-hover btn;
 }
 
 .button-primary-outlined {
-    @apply border border-primary border-solid text-primary btn;
+    @apply border border-solid border-primary text-primary btn;
 }
 
 .button-primary-outlined:hover {
@@ -35,35 +35,45 @@
 }
 
 .button-secondary {
-    @apply border border-black border-solid bg-black text-white btn;
+    @apply text-white bg-black border border-black border-solid btn;
 }
 
 .button-secondary:hover {
-    @apply border border-primary border-solid bg-primary text-white btn;
+    @apply text-white border border-solid border-primary bg-primary btn;
 }
 
 .button-secondary-outlined {
-    @apply border border-black border-solid text-black btn;
+    @apply text-black border border-black border-solid btn;
 }
 
 .button-secondary-outlined:hover {
-    @apply border border-primary border-solid text-primary btn;
+    @apply border border-solid border-primary text-primary btn;
 }
 
 /* TYPOGRAPHY */
 
-h1, h2 {
-    @apply font-heading
+h1, h2, h3, h4, h5 {
+    line-height: 0.8;
 }
 
-h3 {
+.header-1 {
+    @apply font-heading text-4xl md:text-6xl xl:text-[96px];
+}
+
+.header-2 {
+    @apply font-heading text-3xl md:text-5xl xl:text-[64px];
+}
+
+.header-3 {
     @apply font-heading text-2xl md:text-3xl xl:text-4xl
 }
 
-.header-1,
-.header-2 {
-    @apply font-heading text-3xl md:text-5xl xl:text-[64px];
-    line-height: 0.8;
+.header-4 {
+    @apply font-heading text-xl md:text-2xl xl:text-3xl
+}
+
+.header-5 {
+    @apply font-heading text-lg md:text-xl
 }
 
 /* SECTIONS */
@@ -82,7 +92,7 @@ h3 {
 }
 
 .section-box {
-    @apply mx-auto px-4 py-10 md:px-10 md:py-20 xl:p-40
+    @apply mx-auto px-4 py-10 md:px-10 md:py-24 xl:p-24
 }
 
 /* Testimonials */
@@ -111,20 +121,20 @@ select:-webkit-autofill:focus {
 /* Headings */
 h1 {
     font-size: 2em;
-    margin-top: 0.67em;
     margin-bottom: 0.67em;
 }
 
 h2 {
     font-size: 1.5em;
-    margin-top: 0.83em;
     margin-bottom: 0.83em;
 }
 
 /* Paragraphs */
 p {
     display: block;
-    margin-top: 1em;
+}
+
+p:not(:only-child), p:not(:last-of-type) {
     margin-bottom: 1em;
 }
 
