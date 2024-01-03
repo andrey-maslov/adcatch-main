@@ -24,9 +24,12 @@
       </h6>
       <div class="items-center ac-mb-xl ac-flex-container-2">
         <div class="ac-flex-item-2">
-          <picture>
+          <NuxtPicture 
+            src="/img/roi@2x.png" 
+          />
+          <!-- <picture>
             <img src="/img/feature-aud-1.png" alt="Adcatch dashboard screenshot">
-          </picture>
+          </picture> -->
         </div>
         <div class="ac-flex-item-2">
           <p class="ac-text-2">
@@ -53,8 +56,11 @@
       </div>
 
       <div class="mx-auto ac-flex-container-3 ac-mb-xl">
-        <div v-for="item in integrations" :key="item.title"
-          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text">
+        <div 
+          v-for="item in integrations" 
+          :key="item.title"
+          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text"
+        >
           <h3 class="flex items-center mb-4 ac-header-3 md:mb-10">
             <img :src="item.img" class="mr-3" alt="" />
             {{ item.title }}

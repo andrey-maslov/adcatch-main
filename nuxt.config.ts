@@ -50,6 +50,7 @@ export default defineNuxtConfig({
 
     modules: [
         'nuxt-swiper',
+        '@nuxt/image',
         '@nuxtjs/tailwindcss',
         '@element-plus/nuxt',
         '@nuxtjs/eslint-module',
@@ -70,6 +71,17 @@ export default defineNuxtConfig({
             },
         }]
     ],
+
+    image: {
+        provider: "vercel",
+        format: ['avif', 'webp', 'jpeg'],
+        densities: [1, 2, 3],
+        screens: {
+            myImgS: 250,
+            myImgL: 500,
+            myImgL2x: 1000,
+        }
+    },
 
     runtimeConfig: {
         public: {
