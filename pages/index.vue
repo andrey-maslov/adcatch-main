@@ -16,7 +16,7 @@
     </section>
 
     <section class="container ac-section-box ac-bordered">
-      <h3 class="mb-0 ac-header-3 text-primary">
+      <h3 class="mb-0 ac-h4 text-primary">
         134.6%
       </h3>
       <h6 class="ac-header-6">
@@ -24,8 +24,9 @@
       </h6>
       <div class="items-center ac-mb-xl ac-flex-container-2">
         <div class="ac-flex-item-2">
-          <NuxtPicture 
-            src="/img/roi@2x.png" 
+          <CustomPicture 
+            src="/img/roi_opt"
+            alt="roi increase" 
           />
           <!-- <picture>
             <img src="/img/feature-aud-1.png" alt="Adcatch dashboard screenshot">
@@ -99,9 +100,11 @@
         </div>
         <div class="ac-flex-item-2">
           <h3 class="ac-h5">Engagement Rate</h3>
-          <picture>
-            <img src="/img/historical.png" alt="Adcatch dashboard screenshot">
-          </picture>
+          <CustomPicture 
+            src="/img/engagement-rate_opt"
+            alt="Engagement Rate"
+            default-format="png"
+          />
         </div>
       </div>
 
