@@ -1,13 +1,13 @@
 <template>
   <div>
     <section class="ac-hero">
-      <div class="container ac-section-box">
+      <div class="ac-hero-container">
 
-        <h1 class="mb-12 text-white ac-header-1">
+        <h1 class="text-white ac-mb-md ac-header-1">
           Create <span class="text-primary">ads that</span> sell
         </h1>
 
-        <h2 class="text-white ac-header-2">
+        <h2 class="text-white ac-header-2 ac-mb-md">
           <span class="text-primary">Data-driven</span> insights <span class="text-primary">for</span> marketing messaging
         </h2>
 
@@ -16,33 +16,33 @@
     </section>
 
     <section class="container ac-section-box ac-bordered">
-      <h3 class="ac-header-3 text-primary">
+      <h3 class="mb-0 ac-header-3 text-primary">
         134.6%
       </h3>
       <h6 class="ac-header-6">
         ROI
       </h6>
-      <div class="flex flex-wrap gap-3 md:flex-nowrap">
-        <div class="w-full mb-4 md:w-1/2 md:mb-20">
+      <div class="items-center ac-mb-xl ac-flex-container-2">
+        <div class="ac-flex-item-2">
           <picture>
             <img src="/img/feature-aud-1.png" alt="Adcatch dashboard screenshot">
           </picture>
         </div>
-        <div class="w-full mb-4 md:w-1/2 md:mb-20">
-          <p class="text-xl md:text-3xl">
+        <div class="ac-flex-item-2">
+          <p class="ac-text-2">
             In today's boom of e-commerce, PPC specialists must constantly analyse marketing performance from multiple
             sources. However, last-click attribution analytics does not demonstrate the long-term marketing impact, which
             leaves marketing professionals struggling to extract meaningful insights.
           </p>
         </div>
       </div>
-      <div class="mx-auto mb-8 text-center">
+      <div class="mx-auto text-center">
         <DemoBookingDialog />
       </div>
     </section>
 
     <section class="container ac-section-box ac-bordered">
-      <h2 class="max-w-[1000px] mx-auto mb-10 text-center md:mb-20 ac-header-2">
+      <h2 class="max-w-[1000px] mx-auto text-center ac-mb-md ac-header-2">
         <span class="text-primary">Ad</span>Catch <span class="text-primary">integrates</span> with advertising and sales
         <span class="text-primary">channels</span> to find main conversion <span class="text-primary">drivers</span>
       </h2>
@@ -52,36 +52,37 @@
         </picture>
       </div>
 
-      <div class="flex flex-wrap justify-between gap-3">
-        <div v-for="item in integrations" :key="item.title" class="w-full mb-4 md:w-1/4 md:mb-20">
-          <h3 class="flex items-center mb-4 header-3 md:mb-6">
-            <img :src="item.img" alt="" />
+      <div class="mx-auto ac-flex-container-3 ac-mb-xl">
+        <div v-for="item in integrations" :key="item.title"
+          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text">
+          <h3 class="flex items-center mb-4 ac-header-3 md:mb-10">
+            <img :src="item.img" class="mr-3" alt="" />
             {{ item.title }}
           </h3>
-          <p class="text-lg md:text-xl">
+          <p class="ac-text-3">
             {{ item.content }}
           </p>
         </div>
       </div>
 
-      <div class="mx-auto mb-8 text-center">
+      <div class="mx-auto text-center">
         <DemoBookingDialog />
       </div>
     </section>
 
     <section class="container ac-section-box ac-bordered">
-      <h2 class="max-w-[1000px] mx-auto mb-10 text-center md:mb-20 ac-header-2">
+      <h2 class="max-w-[1000px] mx-auto text-center ac-mb-md ac-header-2">
         <span class="text-primary">Beyond</span> last-<span class="text-primary">click</span> attribution
       </h2>
 
-      <p class="ac-subheader-1">
+      <div class="ac-subheader-1">
         Adcatch analyses historical data and determines the actual impact of every digital touch-point.
-      </p>
+      </div>
 
-      <div class="flex flex-wrap gap-3 md:flex-nowrap">
-        <div class="w-full mb-4 md:w-1/2 md:mb-20">
-          <h3>Discover insights on marketing performance:</h3>
-          <ul>
+      <div class="ac-flex-container-2">
+        <div class="ac-flex-item-2">
+          <h3 class="ac-h5">Discover insights on marketing performance:</h3>
+          <ul class="ac-text-2">
             <li>how advertising affects your sales</li>
             <li>how price change correlates with sales</li>
             <li>how to out-stand your competitors</li>
@@ -90,42 +91,42 @@
             <li>what keywords generate the highest searchability</li>
           </ul>
         </div>
-        <div class="w-full mb-4 md:w-1/2 md:mb-20">
-          <h3>Engagement Rate</h3>
+        <div class="ac-flex-item-2">
+          <h3 class="ac-h5">Engagement Rate</h3>
           <picture>
             <img src="/img/historical.png" alt="Adcatch dashboard screenshot">
           </picture>
         </div>
       </div>
 
-      <p class="text-center">and many more e-commerce insights straight from the box</p>
+      <div class="font-bold text-center ac-text-2 ac-mb-md">and many more e-commerce insights straight from the box</div>
 
-      <div class="mx-auto mb-8 text-center">
+      <div class="mx-auto text-center">
         <DemoBookingDialog />
       </div>
     </section>
 
     <section class="container features ac-section-box ac-bordered">
-      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 ac-header-2">
+      <h2 class="max-w-2xl mx-auto text-center ac-mb-md ac-header-2">
         All <span class="text-primary">marketing</span> campaigns <span class="text-primary">in one place</span>
       </h2>
 
-      <p class="ac-subheader-1">Seamlessly collect
-        data from diverse sources and transform complex data into clear and insightful reports.</p>
+      <div class="ac-subheader-1">Seamlessly collect
+        data from diverse sources and transform complex data into clear and insightful reports.</div>
 
-      <!--   IMAGE here     -->
-      <div class="mb-12 text-center">
+      <!--   IMAGE dashboard    -->
+      <div class="text-center ac-mb-xl">
         <picture>
           <img src="/img/features-2.png" class="mx-auto ac-img-responsive" alt="Adcatch dashboard screenshot">
         </picture>
       </div>
 
-      <div class="flex flex-wrap justify-between gap-3">
-        <div v-for="feature in features" :key="feature.title" class="w-full mb-4 md:w-1/4 md:mb-20">
-          <h3 class="mb-4 md:mb-6">
+      <div class="ac-flex-container-3 ac-mb-xl">
+        <div v-for="feature in features" :key="feature.title" class="ac-flex-item-3">
+          <h3 class="ac-mb-lg ac-h4">
             {{ feature.title }}
           </h3>
-          <p class="ac-subheader-1">
+          <p class="ac-text-1">
             {{ feature.content }}
           </p>
         </div>
@@ -137,17 +138,17 @@
     </section>
 
     <section class="container ac-section-box ac-bordered">
-      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 ac-header-2">
+      <h2 class="max-w-2xl mx-auto text-center ac-mb-md ac-header-2">
         <span class="text-primary">Advanced</span> audience <span class="text-primary">segmentation</span>
       </h2>
 
-      <p class="ac-subheader-1">
+      <div class="ac-subheader-1">
         Break up your audience based on various criteria, such as demographics, interests, and behavior, to gain deeper
         insights and deliver more relevant messaging.
-      </p>
+      </div>
 
-      <div class="flex flex-wrap justify-between gap-3">
-        <div v-for="feature in featuresAudience" :key="feature.title" class="w-full mb-4 md:w-1/4 md:mb-20">
+      <div class="ac-flex-container-3">
+        <div v-for="feature in featuresAudience" :key="feature.title" class="ac-flex-item-3">
           <h3 class="mb-4 md:mb-6">
             {{ feature.title }}
           </h3>
@@ -174,7 +175,7 @@
         (no credit card required)
       </p>
     </section> -->
-    
+
   </div>
 </template>
 

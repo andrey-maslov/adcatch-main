@@ -14,7 +14,7 @@
         </button>
       </a>
 
-      <DemoBookingDialog />
+      <DemoBookingDialog button-text="Book a demo" />
     </div>
   </header>
 </template>
