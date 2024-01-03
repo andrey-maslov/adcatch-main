@@ -8,85 +8,131 @@
     }
 }
 
+/* We acc prefix ac- (AdCatch) to some custom class names similar to tailwindcss names to separate them */
+
 /* BUTTONS */
 
-.btn {
+.ac-btn {
     @apply px-5 py-5 text-sm font-bold uppercase transition rounded md:px-8;
     letter-spacing: 1px;
     box-sizing: border-box;
     line-height: 1;
 }
 
-.button-primary {
-    @apply text-white border border-solid border-primary bg-primary btn;
+.ac-button-primary {
+    @apply text-white border border-solid border-primary bg-primary ac-btn;
     box-shadow: 0 10px 15px 0 #FF3D004D;
 }
 
-.button-primary:hover {
-    @apply text-white bg-primary-hover border-primary-hover btn;
+.ac-button-primary:hover {
+    @apply text-white bg-primary-hover border-primary-hover ac-btn;
 }
 
-.button-primary-outlined {
-    @apply border border-solid border-primary text-primary btn;
+.ac-button-primary-outlined {
+    @apply border border-solid border-primary text-primary ac-btn;
 }
 
-.button-primary-outlined:hover {
+.ac-button-primary-outlined:hover {
     @apply border-primary-hover text-primary-hover;
 }
 
-.button-secondary {
-    @apply text-white bg-black border border-black border-solid btn;
+.ac-button-secondary {
+    @apply text-white bg-black border border-black border-solid ac-btn;
 }
 
-.button-secondary:hover {
-    @apply text-white border border-solid border-primary bg-primary btn;
+.ac-button-secondary:hover {
+    @apply text-white border border-solid border-primary bg-primary ac-btn;
 }
 
-.button-secondary-outlined {
-    @apply text-black border border-black border-solid btn;
+.ac-button-secondary-outlined {
+    @apply text-black border border-black border-solid ac-btn;
 }
 
-.button-secondary-outlined:hover {
-    @apply border border-solid border-primary text-primary btn;
+.ac-button-secondary-outlined:hover {
+    @apply border border-solid border-primary text-primary ac-btn;
 }
 
 /* TYPOGRAPHY */
 
-h1, h2, h3, h4, h5 {
+.ac-text-1 {
+    @apply text-xl md:text-2xl lg:text-4xl;
+    line-height: 1.7;
+}
+
+.ac-text-2 {
+    @apply text-xl md:text-2xl lg:text-[32px];
+    line-height: 1.5;
+}
+
+.ac-text-3 {
+    @apply text-base md:text-xl lg:text-2xl;
+    line-height: 1.4;
+}
+
+.ac-header-1, .ac-header-2, .ac-header-3, .ac-header-4, .ac-header-5, .ac-header-6 {
+    @apply font-heading;
     line-height: 0.8;
 }
 
-.header-1 {
-    @apply font-heading text-4xl md:text-6xl xl:text-[96px];
+.ac-h1 {
+    @apply text-4xl md:text-6xl xl:text-8xl;
 }
 
-.header-2 {
-    @apply font-heading text-3xl md:text-5xl xl:text-[64px];
+.ac-h2 {
+    @apply text-3xl md:text-5xl xl:text-[64px];
 }
 
-.header-3 {
-    @apply font-heading text-2xl md:text-3xl xl:text-4xl
+.ac-h3 {
+    @apply text-2xl md:text-3xl xl:text-5xl;
 }
 
-.header-4 {
-    @apply font-heading text-xl md:text-2xl xl:text-3xl
+.ac-h4 {
+    @apply text-xl md:text-2xl xl:text-4xl;
 }
 
-.header-5 {
-    @apply font-heading text-lg md:text-xl
+.ac-h5 {
+    @apply text-lg md:text-xl xl:text-[32px]
 }
 
-.subheader-1 {
-    @apply max-w-4xl mx-auto mb-8 text-xl leading-7 text-center md:text-2xl lg:mb-20 md:leading-8
+.ac-h6 {
+    @apply text-lg md:text-xl
 }
 
-.subheader-2 {
-    @apply max-w-4xl mx-auto mb-8 text-xl leading-7 text-center md:text-2xl lg:mb-20 md:leading-8
+.ac-header-1 {
+    @apply ac-h1;
+}
+
+.ac-header-2 {
+    @apply ac-h2;
+}
+
+.ac-header-3 {
+    @apply ac-h3;
+}
+
+.ac-header-4 {
+    @apply ac-h4;
+}
+
+.ac-header-5 {
+    @apply ac-h5; 
+}
+
+.ac-header-6 {
+    @apply ac-h6; 
+}
+
+.ac-subheader-1 {
+    @apply ac-text-1 max-w-4xl mx-auto mb-8 text-center lg:mb-20
+}
+
+.ac-subheader-2 {
+    @apply max-w-4xl mx-auto mb-8 text-center ac-text-2 lg:mb-20;
 }
 
 /* SECTIONS */
 
-.hero {
+.ac-hero {
     @apply bg-slate-900;
     background-image: url('/img/hero_bg_opt.jpeg');
 
@@ -95,11 +141,11 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-.bordered {
+.ac-bordered {
     @apply border-b border-text
 }
 
-.section-box {
+.ac-section-box {
     @apply mx-auto px-4 py-10 md:px-10 md:py-24 xl:p-24
 }
 
@@ -111,8 +157,8 @@ h1, h2, h3, h4, h5 {
 }
 
 
-/* UTILITY */
-.img-responsive {
+/* IMAGES */
+.ac-img-responsive {
     display: block;
     max-width: 100%;
     max-height: auto;

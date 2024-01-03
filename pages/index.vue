@@ -1,13 +1,13 @@
 <template>
   <div>
-    <section class="hero">
-      <div class="container section-box">
+    <section class="ac-hero">
+      <div class="container ac-section-box">
 
-        <h1 class="mb-12 text-white header-1">
+        <h1 class="mb-12 text-white ac-header-1">
           Create <span class="text-primary">ads that</span> sell
         </h1>
 
-        <h2 class="text-white header-2">
+        <h2 class="text-white ac-header-2">
           <span class="text-primary">Data-driven</span> insights <span class="text-primary">for</span> marketing messaging
         </h2>
 
@@ -15,13 +15,13 @@
       </div>
     </section>
 
-    <section class="container section-box bordered">
-      <h3 class="header-3 text-primary">
+    <section class="container ac-section-box ac-bordered">
+      <h3 class="ac-header-3 text-primary">
         134.6%
       </h3>
-      <h5 class="header-5">
+      <h6 class="ac-header-6">
         ROI
-      </h5>
+      </h6>
       <div class="flex flex-wrap gap-3 md:flex-nowrap">
         <div class="w-full mb-4 md:w-1/2 md:mb-20">
           <picture>
@@ -41,8 +41,8 @@
       </div>
     </section>
 
-    <section class="container section-box bordered">
-      <h2 class="max-w-[1000px] mx-auto mb-10 text-center md:mb-20 header-2">
+    <section class="container ac-section-box ac-bordered">
+      <h2 class="max-w-[1000px] mx-auto mb-10 text-center md:mb-20 ac-header-2">
         <span class="text-primary">Ad</span>Catch <span class="text-primary">integrates</span> with advertising and sales
         <span class="text-primary">channels</span> to find main conversion <span class="text-primary">drivers</span>
       </h2>
@@ -69,12 +69,12 @@
       </div>
     </section>
 
-    <section class="container section-box bordered">
-      <h2 class="max-w-[1000px] mx-auto mb-10 text-center md:mb-20 header-2">
+    <section class="container ac-section-box ac-bordered">
+      <h2 class="max-w-[1000px] mx-auto mb-10 text-center md:mb-20 ac-header-2">
         <span class="text-primary">Beyond</span> last-<span class="text-primary">click</span> attribution
       </h2>
 
-      <p class="subheader-1">
+      <p class="ac-subheader-1">
         Adcatch analyses historical data and determines the actual impact of every digital touch-point.
       </p>
 
@@ -87,7 +87,7 @@
             <li>how to out-stand your competitors</li>
             <li>which materials catching customer's eyes</li>
             <li>what descriptions the most engaging</li>
-            <li>what keywords generate the highest searchability </li>
+            <li>what keywords generate the highest searchability</li>
           </ul>
         </div>
         <div class="w-full mb-4 md:w-1/2 md:mb-20">
@@ -105,18 +105,18 @@
       </div>
     </section>
 
-    <section class="container features section-box bordered">
-      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 header-2">
+    <section class="container features ac-section-box ac-bordered">
+      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 ac-header-2">
         All <span class="text-primary">marketing</span> campaigns <span class="text-primary">in one place</span>
       </h2>
 
-      <p class="subheader-1">Seamlessly collect
+      <p class="ac-subheader-1">Seamlessly collect
         data from diverse sources and transform complex data into clear and insightful reports.</p>
 
       <!--   IMAGE here     -->
       <div class="mb-12 text-center">
         <picture>
-          <img src="/img/features-2.png" class="mx-auto img-responsive" alt="Adcatch dashboard screenshot">
+          <img src="/img/features-2.png" class="mx-auto ac-img-responsive" alt="Adcatch dashboard screenshot">
         </picture>
       </div>
 
@@ -125,7 +125,7 @@
           <h3 class="mb-4 md:mb-6">
             {{ feature.title }}
           </h3>
-          <p class="subheader-1">
+          <p class="ac-subheader-1">
             {{ feature.content }}
           </p>
         </div>
@@ -136,12 +136,12 @@
       </div>
     </section>
 
-    <section class="container section-box bordered">
-      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 header-2">
+    <section class="container ac-section-box ac-bordered">
+      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 ac-header-2">
         <span class="text-primary">Advanced</span> audience <span class="text-primary">segmentation</span>
       </h2>
 
-      <p class="subheader-1">
+      <p class="ac-subheader-1">
         Break up your audience based on various criteria, such as demographics, interests, and behavior, to gain deeper
         insights and deliver more relevant messaging.
       </p>
@@ -158,26 +158,23 @@
       </div>
     </section>
 
-    <section class="container section-box">
-      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 header-2">
+    <!-- <section class="container ac-section-box">
+      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 ac-header-2">
         Identify and <span class="text-primary">eliminate</span>
         wasteful ad <span class="text-primary">spend</span> and
         <span class="text-primary">improve</span> your <span class="text-primary">ROAS</span>.
       </h2>
-
-      <!--    TESTIMONIALS here    -->
       <div class="mb-8 -mx-4 lg:mb-20 md:mx-0">
         <LazyTestimonialsSlider />
       </div>
-
       <div class="mx-auto mb-8 text-center">
         <DemoBookingDialog />
       </div>
-
       <p class="text-center">
         (no credit card required)
       </p>
-    </section>
+    </section> -->
+    
   </div>
 </template>
 

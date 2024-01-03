@@ -1,15 +1,15 @@
 <template>
-  <footer class="px-4 md:px-20 xl:px-36 py-4 md:py-12 xl:py-16 pb-0 bg-black text-white">
+  <footer class="px-4 py-4 pb-0 text-white bg-black md:px-20 xl:px-36 md:py-12 xl:py-16">
     <div class="flex flex-wrap items-end">
-      <div class="w-full md:w-1/4 mb-8">
+      <div class="w-full mb-8 md:w-1/4">
         <div class="mb-8">
           <CustomLogo size="large" />
         </div>
         <p>Adcatch OÜ,<br>Tallinn, Estonia,<br>All Rights Reserved.</p>
       </div>
 
-      <div class="md:text-right grow w-full md:w-3/4 mb-8">
-        <div class="social-media inline-flex gap-4 mb-8">
+      <div class="w-full mb-8 md:text-right grow md:w-3/4">
+        <div class="inline-flex gap-4 mb-8">
           <a
             v-for="item in contacts"
             :key="item.title"
@@ -20,7 +20,7 @@
           </a>
         </div>
 
-        <div class="links">
+        <div>
           <NuxtLink
             v-for="item in links"
             :key="item.title"

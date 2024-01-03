@@ -1,15 +1,15 @@
 <template>
-  <header class="flex gap-1 justify-between items-center px-4 bg-white w-full">
+  <header class="flex items-center justify-between w-full gap-1 px-4 bg-white">
     <CustomLogo />
-    <div class="buttons flex items-center gap-2 md:gap-5">
+    <div class="flex items-center gap-2 md:gap-5">
       <a class="hidden md:inline-block" href="https://adcatch.pro/#/registration">
-        <button class="button-secondary">
+        <button class="ac-button-secondary">
           Sign up
         </button>
       </a>
 
       <a class="hidden md:inline-block" href="https://adcatch.pro/#/login">
-        <button class="button-secondary-outlined">
+        <button class="ac-button-secondary-outlined">
           Log in
         </button>
       </a>

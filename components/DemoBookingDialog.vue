@@ -1,5 +1,5 @@
 <template>
-  <button class="button-primary" @click="dialogVisible = true">
+  <button class="ac-button-primary" @click="dialogVisible = true">
     Book a demo
   </button>
 

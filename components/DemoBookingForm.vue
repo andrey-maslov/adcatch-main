@@ -32,7 +32,7 @@
           />
         </el-form-item>
 
-        <div class="mt-10 text-center w-full">
+        <div class="w-full mt-10 text-center">
           <el-button class="button-submit" @click="onSubmit(bookingFormRef)">
             Submit
           </el-button>
@@ -40,15 +40,15 @@
       </el-form>
     </div>
 
-    <div v-if="formSubmitted" class="demo-booking-content flex flex-col">
+    <div v-if="formSubmitted" class="flex flex-col demo-booking-content">
       <div class="flex flex-col items-center justify-center grow">
-        <h3 class="font-sans text-center mb-8">
+        <h3 class="mb-8 font-sans text-center">
           Thank you
         </h3>
         <p>The invitation will soon be sent</p>
       </div>
       <div class="text-center">
-        <button class="button-primary btn" @click="handleClose">
+        <button class="ac-button-primary" @click="handleClose">
           Go back
         </button>
       </div>
