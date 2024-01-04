@@ -1,9 +1,8 @@
 <template>
-  <picture>
-    <source :srcset="`${src}.webp`" type="image/webp">
-    <source :srcset="`${src}.jpg`" type="image/jpeg">
-    <source :srcset="`${src}.png`" type="image/png">
-    <img :src="`${src}.${defaultFormat}`" :alt="alt" />
+  <picture class="inline-block mx-auto">
+    <source :srcset="`${srcWOFormat}.webp`" type="image/webp">
+    <source :srcset="props.src" :type="`image/${format}`">
+    <img :src="props.src" :alt="props.alt" />
   </picture>
   <!-- <picture>
     <source media="(min-width: 36em)" srcset="large.jpg  1024w,
@@ -16,11 +15,13 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   src: String,
-  alt: String,
-  defaultFormat: { type: String, default: 'jpg' }
+  alt: { type: String, required: false, default: '' },
 })
+
+const format = props.src.split('.')?.[1] ?? 'jpg';
+const srcWOFormat = props.src.split('.')?.[0] ?? '';
 </script>
 
 <style lang="scss" scoped></style>

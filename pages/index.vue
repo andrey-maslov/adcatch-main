@@ -24,10 +24,7 @@
       </h6>
       <div class="items-center ac-mb-xl ac-flex-container-2">
         <div class="ac-flex-item-2">
-          <CustomPicture 
-            src="/img/roi_opt"
-            alt="roi increase" 
-          />
+          <CustomPicture src="/img/roi_opt.jpg" alt="roi increase" />
           <!-- <picture>
             <img src="/img/feature-aud-1.png" alt="Adcatch dashboard screenshot">
           </picture> -->
@@ -50,18 +47,21 @@
         <span class="text-primary">Ad</span>Catch <span class="text-primary">integrates</span> with advertising and sales
         <span class="text-primary">channels</span> to find main conversion <span class="text-primary">drivers</span>
       </h2>
-      <div class="mb-24">
-        <picture>
-          <img src="/img/integrations.png" alt="integrations">
-        </picture>
+
+      <div class="flex flex-wrap items-center justify-center mb-24 lg:gap-32 lg:flex-nowrap ac-mb-xl">
+        <div class="relative py-0 lg:py-16">
+          <img class="absolute bottom-0 hidden lg:inline-block -left-32" src="/img/stripe.png" alt="">
+          <CustomPicture src="/img/integrations-left_opt.png" alt="integrations" />
+        </div>
+        <div class="relative py-0 lg:py-16">
+          <img class="absolute top-0 hidden rotate-180 lg:inline-block -right-32" src="/img/stripe.png" alt="">
+          <CustomPicture src="/img/integrations-right_opt.png" alt="integrations" />
+        </div>
       </div>
 
       <div class="mx-auto ac-flex-container-3 ac-mb-xl">
-        <div 
-          v-for="item in integrations" 
-          :key="item.title"
-          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text"
-        >
+        <div v-for="item in integrations" :key="item.title"
+          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text">
           <h3 class="flex items-center mb-4 ac-header-3 md:mb-10">
             <img :src="item.img" class="mr-3" alt="" />
             {{ item.title }}
@@ -100,11 +100,7 @@
         </div>
         <div class="ac-flex-item-2">
           <h3 class="ac-h5">Engagement Rate</h3>
-          <CustomPicture 
-            src="/img/engagement-rate_opt"
-            alt="Engagement Rate"
-            default-format="png"
-          />
+          <CustomPicture src="/img/engagement-rate_opt.png" alt="Engagement Rate" />
         </div>
       </div>
 
@@ -125,9 +121,7 @@
 
       <!--   IMAGE dashboard    -->
       <div class="text-center ac-mb-xl">
-        <picture>
-          <img src="/img/features-2.png" class="mx-auto ac-img-responsive" alt="Adcatch dashboard screenshot">
-        </picture>
+        <CustomPicture src="/img/features-2.png" alt="Adcatch dashboard screenshot" />
       </div>
 
       <div class="ac-flex-container-3 ac-mb-xl">
@@ -161,9 +155,7 @@
           <h3 class="mb-4 md:mb-6">
             {{ feature.title }}
           </h3>
-          <picture>
-            <img src="/img/feature-aud-1.png" alt="Adcatch audience">
-          </picture>
+          <CustomPicture :src="feature.img" :alt="feature.title" />
         </div>
       </div>
     </section>
@@ -196,9 +188,9 @@ const features = [
 ]
 
 const featuresAudience = [
-  { title: 'Interests', img: '' },
-  { title: 'Age&Gender ', img: '' },
-  { title: 'Geo', img: '' },
+  { title: 'Interests', img: '/img/interests_opt.png' },
+  { title: 'Age&Gender ', img: '/img/age_opt.png' },
+  { title: 'Geo', img: '/img/geo_opt.png' },
 ]
 
 const integrations = [
