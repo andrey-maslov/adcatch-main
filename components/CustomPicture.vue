@@ -2,7 +2,7 @@
   <picture class="inline-block mx-auto">
     <source :srcset="`${srcWOFormat}.webp`" type="image/webp">
     <source :srcset="props.src" :type="`image/${format}`">
-    <img :src="props.src" :alt="props.alt" />
+    <img :src="props.src" :alt="props.alt">
   </picture>
   <!-- <picture>
     <source media="(min-width: 36em)" srcset="large.jpg  1024w,

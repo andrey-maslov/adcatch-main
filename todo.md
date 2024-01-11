@@ -15,3 +15,7 @@ font sizes
     36px = text-4xl
     32px
     24px = text-2xl
+
+Mobile
+- drawer in header
+- new picture with networks

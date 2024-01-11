@@ -3,7 +3,7 @@ const swiper = useSwiper()
 </script>
 
 <template>
-  <div class="flex justify-between px-10 md:px-0 md:block">
+  <div class="flex justify-between md:block max-w-[128px] md:max-w-none mx-auto">
     <button class="button-prev" aria-label="Previous slide" @click="swiper.slidePrev()">
       <Icon size="31px" :name="`tabler:chevron-left`" />
     </button>
@@ -45,10 +45,9 @@ const swiper = useSwiper()
   .button-prev,
   .button-next {
     position: relative;
-    width: 80px;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 3px;
+    width: 42px;
+    height: 42px;
+    margin-top: 30px;
   }
 
   .button-prev {

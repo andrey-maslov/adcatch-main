@@ -1,13 +1,12 @@
 <template>
   <div>
     <section class="ac-hero">
-      <div class="ac-hero-container">
-
-        <h1 class="text-white ac-mb-md ac-header-1">
+      <div class="text-center md:text-left ac-hero-container">
+        <h1 class="text-white mb-11 lg:mb-12 ac-header-1">
           Create <span class="text-primary">ads that</span> sell
         </h1>
 
-        <h2 class="text-white ac-header-2 ac-mb-md">
+        <h2 class="text-white ac-header-2 mb-11 lg:mb-12">
           <span class="text-primary">Data-driven</span> insights <span class="text-primary">for</span> marketing messaging
         </h2>
 
@@ -25,9 +24,6 @@
       <div class="items-center ac-mb-xl ac-flex-container-2">
         <div class="ac-flex-item-2">
           <CustomPicture src="/img/roi_opt.jpg" alt="roi increase" />
-          <!-- <picture>
-            <img src="/img/feature-aud-1.png" alt="Adcatch dashboard screenshot">
-          </picture> -->
         </div>
         <div class="ac-flex-item-2">
           <p class="ac-text-2">
@@ -48,22 +44,23 @@
         <span class="text-primary">channels</span> to find main conversion <span class="text-primary">drivers</span>
       </h2>
 
-      <div class="flex flex-wrap items-center justify-center mb-24 lg:gap-32 lg:flex-nowrap ac-mb-xl">
-        <div class="relative py-0 lg:py-16">
-          <img class="absolute bottom-0 hidden lg:inline-block -left-32" src="/img/stripe.png" alt="">
+      <div class="flex items-top justify-center mb-24 gap-12 pt-4 lg:gap-32 ac-mb-xl max-w-[1260px] mx-auto">
+        <div class="pt-[7.5%]">
           <CustomPicture src="/img/integrations-left_opt.png" alt="integrations" />
         </div>
-        <div class="relative py-0 lg:py-16">
-          <img class="absolute top-0 hidden rotate-180 lg:inline-block -right-32" src="/img/stripe.png" alt="">
+        <div>
           <CustomPicture src="/img/integrations-right_opt.png" alt="integrations" />
         </div>
       </div>
 
       <div class="mx-auto ac-flex-container-3 ac-mb-xl">
-        <div v-for="item in integrations" :key="item.title"
-          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text">
+        <div
+          v-for="item in integrations"
+          :key="item.title"
+          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text"
+        >
           <h3 class="flex items-center mb-4 ac-header-3 md:mb-10">
-            <img :src="item.img" class="mr-3" alt="" />
+            <img :src="item.img" class="mr-3" alt="">
             {{ item.title }}
           </h3>
           <p class="ac-text-3">
@@ -87,8 +84,16 @@
       </div>
 
       <div class="ac-flex-container-2">
+        <div class="ac-flex-item-2 lg:order-last">
+          <h3 class="ac-h5">
+            Engagement Rate
+          </h3>
+          <CustomPicture src="/img/engagement-rate_opt.png" alt="Engagement Rate" />
+        </div>
         <div class="ac-flex-item-2">
-          <h3 class="ac-h5">Discover insights on marketing performance:</h3>
+          <h3 class="ac-h5">
+            Discover insights on marketing performance:
+          </h3>
           <ul class="ac-text-2">
             <li>how advertising affects your sales</li>
             <li>how price change correlates with sales</li>
@@ -98,13 +103,11 @@
             <li>what keywords generate the highest searchability</li>
           </ul>
         </div>
-        <div class="ac-flex-item-2">
-          <h3 class="ac-h5">Engagement Rate</h3>
-          <CustomPicture src="/img/engagement-rate_opt.png" alt="Engagement Rate" />
-        </div>
       </div>
 
-      <div class="font-bold text-center ac-text-2 ac-mb-md">and many more e-commerce insights straight from the box</div>
+      <div class="font-bold text-center ac-text-2 ac-mb-md">
+        and many more e-commerce insights straight from the box
+      </div>
 
       <div class="mx-auto text-center">
         <DemoBookingDialog />
@@ -116,8 +119,10 @@
         All <span class="text-primary">marketing</span> campaigns <span class="text-primary">in one place</span>
       </h2>
 
-      <div class="ac-subheader-1">Seamlessly collect
-        data from diverse sources and transform complex data into clear and insightful reports.</div>
+      <div class="ac-subheader-1">
+        Seamlessly collect
+        data from diverse sources and transform complex data into clear and insightful reports.
+      </div>
 
       <!--   IMAGE dashboard    -->
       <div class="text-center ac-mb-xl">
@@ -160,11 +165,11 @@
       </div>
     </section>
 
-    <!-- <section class="container ac-section-box">
-      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 ac-header-2">
+    <section class="container ac-section-box">
+      <h2 class="max-w-2xl mx-auto mb-10 text-center md:mb-20 ac-header-2 hidden md:block">
         Identify and <span class="text-primary">eliminate</span>
         wasteful ad <span class="text-primary">spend</span> and
-        <span class="text-primary">improve</span> your <span class="text-primary">ROAS</span>.
+        <span class="text-primary">improve</span> your <span class="text-primary">ROAS</span>
       </h2>
       <div class="mb-8 -mx-4 lg:mb-20 md:mx-0">
         <LazyTestimonialsSlider />
@@ -172,11 +177,10 @@
       <div class="mx-auto mb-8 text-center">
         <DemoBookingDialog />
       </div>
-      <p class="text-center">
+      <p class="text-center hidden md:block">
         (no credit card required)
       </p>
-    </section> -->
-
+    </section>
   </div>
 </template>
 

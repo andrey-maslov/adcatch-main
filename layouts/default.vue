@@ -27,4 +27,14 @@
     z-index: 200;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .app {
+    padding-top: 76px;
+
+    header {
+      height: 76px;
+    }
+  }
+}
 </style>

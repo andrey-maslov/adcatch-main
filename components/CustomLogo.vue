@@ -21,4 +21,13 @@ defineProps<{
 .logo.large {
   font-size: 64px;
 }
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 36px;
+  }
+  .logo.large {
+    font-size: 64px;
+  }
+}
 </style>
