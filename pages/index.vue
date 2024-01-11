@@ -57,7 +57,7 @@
         <div
           v-for="item in integrations"
           :key="item.title"
-          class="p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text"
+          class="p-4 md:p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text"
         >
           <h3 class="flex items-center mb-4 ac-header-3 md:mb-10">
             <img :src="item.img" class="mr-3" alt="">
@@ -130,11 +130,11 @@
       </div>
 
       <div class="ac-flex-container-3 ac-mb-xl">
-        <div v-for="feature in features" :key="feature.title" class="ac-flex-item-3">
-          <h3 class="ac-mb-lg ac-h4">
+        <div v-for="feature in features" :key="feature.title" class="ac-flex-item-3 py-3 md:py-0">
+          <h3 class="ac-h4">
             {{ feature.title }}
           </h3>
-          <p class="ac-text-1">
+          <p class="ac-text-2">
             {{ feature.content }}
           </p>
         </div>

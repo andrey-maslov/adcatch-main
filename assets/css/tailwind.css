@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ac-h4 {
-    @apply text-xl md:text-2xl xl:text-4xl;
+    @apply text-xl md:text-2xl lg:text-4xl;
 }
 
 .ac-h5 {
