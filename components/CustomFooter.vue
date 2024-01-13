@@ -39,7 +39,7 @@
 import CustomLogo from "~/components/CustomLogo.vue";
 
 const contacts = [
-  {title: 'linkedin', link: ''},
+  {title: 'linkedin', link: 'https://www.linkedin.com/company/adcatchpro'},
   {title: 'envelope', link: 'mailto:alex.vorozhun@adcatch.pro'},
 ]
 

@@ -159,6 +159,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .ac-header-1, .ac-header-2, .ac-header-3, .ac-header-4, .ac-header-5, .ac-header-6 {
     @apply font-heading;
+    @apply font-normal;
     line-height: 0.8;
 }
 
