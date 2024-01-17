@@ -93,6 +93,7 @@ h4 {
 
 h1,h2,h3,h4,h5,h6 {
     @apply font-bold;
+    line-height: 1.6;
 }
 
 /* We acc prefix ac- (AdCatch) to some custom class names similar to tailwindcss names to separate them */
@@ -100,7 +101,7 @@ h1,h2,h3,h4,h5,h6 {
 /* BUTTONS */
 
 .ac-btn {
-    @apply py-2 md:py-4 text-[11px] md:text-sm font-bold uppercase transition rounded px-8;
+    @apply py-3 md:py-4 text-[11px] md:text-sm font-bold uppercase transition rounded px-8;
     letter-spacing: 1px;
     box-sizing: border-box;
     line-height: 1;
@@ -229,7 +230,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ac-section-box {
-    @apply px-4 py-10 mx-auto md:py-24;
+    @apply px-4 py-10 mx-auto md:py-20 lg:py-24;
 }
 
 .ac-hero {
@@ -263,7 +264,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* flex container with 2 elements in wide screen */
 .ac-flex-container-2 {
-    @apply flex flex-wrap justify-between space-x-0 space-y-2 lg:flex-nowrap lg:space-y-0 lg:space-x-4;
+    @apply flex flex-wrap justify-center space-x-0 space-y-2 lg:justify-between lg:flex-nowrap lg:space-y-0 lg:space-x-4;
 }
 
 /* flex item  1/2  in wide screen */
@@ -273,7 +274,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* flex container with 3 elements in wide screen */
 .ac-flex-container-3 {
-    @apply flex flex-wrap justify-between space-x-0 space-y-2 lg:flex-nowrap lg:space-x-4 lg:space-y-0;
+    @apply flex flex-wrap justify-center space-x-0 space-y-2 lg:justify-between lg:flex-nowrap lg:space-x-4 lg:space-y-0;
 }
 
 /* flex item  1/3  in wide screen */

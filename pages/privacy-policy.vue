@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-8 lg:py-20 px-4 mx-auto">
+  <div class="container px-4 py-8 mx-auto lg:py-20">
     <h1>PRIVACY POLICY</h1>
     <p>updated:&nbsp;15&nbsp;March 2021</p>
     <p>This Privacy Policy (hereinafter, the Policy) governs the processing of personal data of Adcatch users and the website with the domain name &ldquo;adcatch.pro&rdquo; (hereinafter referred to as the Services).</p>
@@ -7,7 +7,7 @@
     <h2>1. Terms and Definitions</h2>
     <p>1.1. For the purposes hereof, the following terms and definitions are used:</p>
     <p>Web-site -&nbsp;web-site with domain name &ldquo;adcatch.pro&rdquo;.</p>
-    <p>We (Adcatch)&nbsp;- Big Fish Consulting&nbsp;Limited Liability Company.</p>
+    <p>We (Adcatch)&nbsp;- AdCatch OÜ.</p>
     <p>You (User)&nbsp;&ndash; any individual that is using functional features of the Services and has reached the age of full legal capacity in accordance with the legislation of the country of their citizenship.</p>
     <p>Services&nbsp;- service for automatic generation of reports on advertising campaigns on the Internet &ldquo;Adcatch&rdquo; and the website with the domain name &ldquo;adcatch.pro&rdquo;.</p>
     <h2>2. Scope</h2>
@@ -16,9 +16,9 @@
     <p>2.3. Please do not use the Services if you do not agree with the provisions and scope hereof.</p>
     <h2>3. Who determines the purposes and means of personal data collection?</h2>
     <p>3.1. The purposes and means of how your personal data is collected in these Services are determined by the following legal entity:</p>
-    <p>Big Fish Consulting&nbsp;Limited Liability Company</p>
-    <p>TIN&nbsp;191092678</p>
-    <p>Belarus, 220123, Minsk, Viery Charužaj str., 25, unit 1, office 10.</p>
+    <p>AdCatch OÜ</p>
+    <p>Business Registry Code 16473143</p>
+    <p>Estonia, Harju maakond, Tallinn, Kesklinna linnaosa, Tartu mnt 69a-19, 10115</p>
     <p>email (general questions):&nbsp;support@adcatch.pro</p>
     <p>email (personal data questions):&nbsp;dpo@adcatch.pro</p>
     <p>4.1.&nbsp;Personal data is any information that could enable direct or indirect identification of a person (e.g., their name, passport details, online identifier, etc.).</p>
@@ -79,6 +79,7 @@
     <p>(2) such personal data are anonymised;</p>
     <p>(3) such personal data are subject to disclosure under the applicable law.</p>
     <p>5.9. We will do our best to keep your personal data protected. However, despite any possible measures taken on our part, we cannot guarantee full protection of the Services against information security risks.</p>
+    <p>5.10. Our use and transfer to any other app of information received from Google APIs will adhere to Google API Services User Data Policy, including the Limited Use requirements.</p>
     <h2>6. Transfer and Disclosure</h2>
     <p>6.1. In addition to our partners, whose services we use to ensure the operation of our Services and store all information of our Services, your personal data will not be transferred to any third parties.</p>
     <p>6.2. Nevertheless to ensure the provision of our services, your personal data may also be transferred to a legal entity created after reorganisation of Adcatch should it be necessary.</p>

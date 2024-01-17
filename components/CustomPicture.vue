@@ -1,17 +1,13 @@
 <template>
-  <picture class="inline-block mx-auto">
-    <source :srcset="`${srcWOFormat}.webp`" type="image/webp">
-    <source :srcset="props.src" :type="`image/${format}`">
+  <picture class="block picture-wrapper">
+    <source :srcset="`${srcWOFormat}.webp 1x, ${srcWOFormat}@2x.webp 2x`" type="image/webp">
+    <source :srcset="`${srcWOFormat}.${format} 1x, ${srcWOFormat}@2x.${format} 2x`" :type="`image/${format}`">
     <img :src="props.src" :alt="props.alt">
   </picture>
-  <!-- <picture>
-    <source media="(min-width: 36em)" srcset="large.jpg  1024w,
-         medium.jpg 640w,
-         small.jpg  320w" sizes="33.3vw" />
-    <source srcset="cropped-large.jpg 2x,
-         cropped-small.jpg 1x" />
-    <img src="small.jpg" alt="A rad wolf" />
-  </picture> -->
+
+
+
+
 </template>
 
 <script setup>
@@ -24,4 +20,14 @@ const format = props.src.split('.')?.[1] ?? 'jpg';
 const srcWOFormat = props.src.split('.')?.[0] ?? '';
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.picture-wrapper {
+  text-align: center;
+
+  img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+}
+</style>

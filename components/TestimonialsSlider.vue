@@ -17,12 +17,12 @@
   >
     <SwiperSlide v-for="item in items" :key="item.name">
       <article class="wrapper">
-        <div class="content text-gray-600">
+        <div class="text-gray-600 content">
           <img :src="item.avatar" alt="avatar" class="avatar">
-          <div class="font-bold text-2xl mb-4 text-center">
+          <div class="mb-4 text-2xl font-bold text-center">
             {{ item.name }}
           </div>
-          <div class="text-xl mb-6 text-center">
+          <div class="mb-6 text-xl text-center">
             {{ item.position }}
           </div>
           <p class="text-xl text-center">
@@ -31,43 +31,17 @@
         </div>
       </article>
     </SwiperSlide>
-    <SwiperControls />
+    <SwiperControls v-if="items.length > 1" />
   </Swiper>
 </template>
 
-<script setup>
-const items = [
-  {
-    name: 'Nadia Zelenkova',
-    position: 'CEO at Red Graphic',
-    avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
-  },
-  {
-    name: 'Nadia Zelenkova 2',
-    position: 'CEO at Red Graphic 2',
-    avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
-  },
-  {
-    name: 'Nadia Zelenkova 3',
-    position: 'CEO at Red Graphic 3',
-    avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
-  },
-  {
-    name: 'Nadia Zelenkova 4',
-    position: 'CEO at Red Graphic 4',
-    avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
-  },
-  {
-    name: 'Nadia Zelenkova 5',
-    position: 'CEO at Red Graphic 4',
-    avatar: '/img/avatar-1.png',
-    text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
-  }
-]
+<script lang="ts" setup>
+import type { TestimonialItem } from '~/data/data';
+
+const props = defineProps<{
+  items: TestimonialItem[]
+}>()
+
 </script>
 
 <style lang="scss" scoped>
