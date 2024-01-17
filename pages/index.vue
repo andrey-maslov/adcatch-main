@@ -45,7 +45,7 @@
       </h2>
 
       <div class="flex items-top justify-center mb-24 gap-12 pt-4 lg:gap-32 ac-mb-xl max-w-[1260px] mx-auto">
-        <div class="pt-[7.5%]">
+        <div>
           <CustomPicture src="/img/integrations-left_opt.png" alt="integrations" />
         </div>
         <div>
