@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ac-button-secondary:hover {
-    @apply text-white border border-solid border-primary bg-primary ac-btn;
+    @apply text-white border border-solid border-primary-hover bg-primary-hover ac-btn;
 }
 
 .ac-button-secondary-outlined {
@@ -137,7 +137,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .ac-button-secondary-outlined:hover {
-    @apply border border-solid border-primary text-primary ac-btn;
+    @apply text-white border border-solid border-primary-hover bg-primary-hover ac-btn;
 }
 
 /* TYPOGRAPHY */
