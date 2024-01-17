@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    devtools: {enabled: true},
+    devtools: { enabled: true },
 
     app: {
         head: {
@@ -48,6 +48,10 @@ export default defineNuxtConfig({
         }
     },
 
+    gtag: {
+        id: process.env.NUXT_PUBLIC_GTAG_ID
+    },
+
     modules: [
         'nuxt-swiper',
         '@nuxtjs/tailwindcss',
@@ -55,6 +59,7 @@ export default defineNuxtConfig({
         '@nuxtjs/eslint-module',
         '@nuxtjs/google-fonts',
         'nuxt-icon',
+        'nuxt-gtag',
         ['nuxt-mail', {
             message: {
                 to: process.env.EMAIL_MAIL_TO,
