@@ -16,6 +16,7 @@
             :href="item.link"
             :aria-label="`Link to ${item.title}`"
             target="_blank"
+            @click="onLinkClick(item.type)"
           >
             <Icon size="31px" :name="`uil:${item.title}`" />
           </a>
@@ -39,14 +40,21 @@
 <script setup>
 import CustomLogo from "~/components/CustomLogo.vue";
 
+const { gtag } = useGtag()
+
 const contacts = [
-  {title: 'linkedin', link: 'https://www.linkedin.com/company/adcatchpro'},
-  {title: 'envelope', link: 'mailto:alex.vorozhun@adcatch.pro'},
+  {type: 'linkedin', title: 'linkedin', link: 'https://www.linkedin.com/company/adcatchpro'},
+  {type: 'email', title: 'envelope', link: 'mailto:alex.vorozhun@adcatch.pro'},
 ]
 
 const links = [
   {title: 'Privacy Policy', link: 'privacy-policy'},
 ]
+
+const onLinkClick = (linkType) => {
+  console.log('cl', linkType)
+  gtag('event', `${linkType}_link_click`)
+}
 
 </script>
 

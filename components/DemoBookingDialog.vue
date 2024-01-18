@@ -1,6 +1,6 @@
 <template>
-  <button class="ac-button-primary" @click="dialogVisible = true">
-    {{ buttonText }}
+  <button class="ac-button-primary" @click="handleOpen">
+    {{ props.buttonText }}
   </button>
 
   <el-dialog
@@ -20,14 +20,25 @@
 <script setup>
 import { ref } from 'vue';
 
-defineProps({
-  buttonText: { type: String, required: false, default: 'Book a product tour' }
+const { gtag } = useGtag()
+
+const props = defineProps({
+  buttonText: { type: String, required: false, default: 'Book a product tour' },
+  place: { type: String, required: false, default: '2' }
 })
 
 const dialogVisible = ref(false);
 
 const handleClose = () => {
   dialogVisible.value = false
+}
+
+const handleOpen = () => {
+  dialogVisible.value = true;
+
+  gtag('event', 'booking_dialog_opened', {
+    place: props.place
+  })
 }
 </script>
 <style lang="scss">

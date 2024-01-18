@@ -4,10 +4,6 @@
     <source :srcset="`${srcWOFormat}.${format} 1x, ${srcWOFormat}@2x.${format} 2x`" :type="`image/${format}`">
     <img :src="props.src" :alt="props.alt">
   </picture>
-
-
-
-
 </template>
 
 <script setup>

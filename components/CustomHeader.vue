@@ -14,7 +14,7 @@
         </button>
       </a>
 
-      <DemoBookingDialog button-text="Book a demo" />
+      <DemoBookingDialog button-text="Book a demo" place="1" />
 
       <!-- Mobile header -->
       <div class="block md:hidden">
