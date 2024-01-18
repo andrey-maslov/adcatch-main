@@ -52,8 +52,11 @@ export default defineNuxtConfig({
         id: process.env.NUXT_PUBLIC_GTAG_ID
     },
 
+    calendly: {},
+
     modules: [
         'nuxt-swiper',
+        'nuxt-calendly',
         '@nuxtjs/tailwindcss',
         '@element-plus/nuxt',
         '@nuxtjs/eslint-module',

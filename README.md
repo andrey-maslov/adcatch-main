@@ -82,3 +82,5 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - Browse icons - [Nuxt-icon](https://icon-sets.iconify.design/tabler/chevron-left/)
 
 - [Element-plus Nuxt starter](https://github.com/element-plus/element-plus-nuxt-starter)
+
+- Booking demo scheduler - [Calendly](https://nuxt-calendly.vercel.app/)
