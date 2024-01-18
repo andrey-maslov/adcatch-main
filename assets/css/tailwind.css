@@ -236,9 +236,13 @@ h1,h2,h3,h4,h5,h6 {
 .ac-hero {
     @apply px-4 py-12 lg:py-48 md:py-24 bg-slate-900;
     background-image: url('/img/hero_bg_opt.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @supports (background-image: url('/img/hero_bg_opt.webp')) {
         background-image: url('/img/hero_bg_opt.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
