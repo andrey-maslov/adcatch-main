@@ -54,8 +54,11 @@
       </div>
 
       <div class="mx-auto ac-flex-container-3 ac-mb-xl">
-        <div v-for="item in integrations" :key="item.title"
-          class="p-4 lg:p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text">
+        <div
+          v-for="item in integrations"
+          :key="item.title"
+          class="p-4 lg:p-8 border-[1px] border-solid rounded-lg ac-flex-item-3 border-text"
+        >
           <h3 class="flex items-center mb-4 ac-header-3 lg:mb-10">
             <img :src="item.img" class="mr-3" alt="">
             {{ item.title }}
@@ -89,7 +92,7 @@
         </div>
         <div class="ac-flex-item-2">
           <h3 class="ac-h5">
-            Discover insights<br /> on marketing performance:
+            Discover insights<br> on marketing performance:
           </h3>
           <ul class="ac-text-2">
             <li>how advertising affects your sales</li>
@@ -123,14 +126,11 @@
 
       <!--   IMAGE dashboard    -->
       <div class="text-center ac-mb-xl">
-
         <picture class="inline-block">
           <source srcset="/img/dashboard_opt.webp 1x, /img/dashboard_opt@2x.webp 2x" type="image/webp">
           <source srcset="/img/dashboard_opt.jpeg 1x, /img/dashboard_opt@2x.jpeg 2x" type="image/jpeg">
           <img src="/img/dashboard_opt.jpeg" alt="Description of the image">
         </picture>
-
-
       </div>
 
       <div class="ac-flex-container-3 ac-mb-xl">
@@ -160,8 +160,11 @@
       </div>
 
       <div class=" ac-flex-container-3">
-        <div v-for="feature in featuresAudience" :key="feature.title"
-          class="ac-flex-item-3 p-4 lg:p-8 border-[1px] lg:border-0 border-solid rounded-lg ac-flex-item-3 border-text max-w-[500px]">
+        <div 
+          v-for="feature in featuresAudience" 
+          :key="feature.title"
+          class="ac-flex-item-3 p-4 lg:p-8 border-[1px] lg:border-0 border-solid rounded-lg ac-flex-item-3 border-text max-w-[500px]"
+        >
           <h3 class="mb-4 lg:mb-6">
             {{ feature.title }}
           </h3>

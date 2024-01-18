@@ -29,7 +29,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "nuxt-mail": "^4.0.2",
     "nuxt-swiper": "^1.2.2",
     "serve": "^14.2.1"
   }
