@@ -36,10 +36,10 @@ export const features = [
   }
   
   export const testimonials: TestimonialItem[] = [
-    {
-      name: 'Nadia Zelenkova',
-      position: 'CEO at Red Graphic',
-      avatar: '/img/avatar-1.png',
-      text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
-    },
+    // {
+    //   name: 'Nadia Zelenkova',
+    //   position: 'CEO at Red Graphic',
+    //   avatar: '/img/avatar-1.png',
+    //   text: 'Lorem ipsum dolor sit amet, adipisicing elit. Aut exercitationem facilis minus molestias. Consequuntur in libero quos unde voluptatem? Aliquam architecto doloribus, enim eveniet quaerat quis repellendus sed vero voluptas.'
+    // },
   ]
