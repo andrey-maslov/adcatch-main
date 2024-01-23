@@ -19,7 +19,5 @@ landing front deploy:
         - yarn generate
         - rm -rf /var/www/landing.adcatch.pro/*
         - cp -r /var/www/dev.landing.adcatch.pro/dist/* /var/www/landing.adcatch.pro/
-    only:
-        - master
     tags:
         - adcatch_prod
