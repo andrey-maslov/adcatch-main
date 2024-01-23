@@ -1,0 +1,25 @@
+stages:
+    - landing_front_deploy
+
+landing front deploy:
+    stage: landing_front_deploy
+    when: manual
+    allow_failure: false
+    only:
+        - master
+    script:
+        - whoami
+        - echo $CI_COMMIT_REF_NAME
+        - cd /var/www/dev.landing.adcatch.pro/
+        - git checkout .
+        - git pull
+        - rm -rf /var/www/dev.landing.adcatch.pro/node_modules
+        - rm -rf /var/www/dev.landing.adcatch.pro/dist
+        - yarn install
+        - yarn generate
+        - rm -rf /var/www/landing.adcatch.pro/*
+        - cp -r /var/www/dev.landing.adcatch.pro/dist/* /var/www/landing.adcatch.pro/
+    only:
+        - master
+    tags:
+        - adcatch_prod
