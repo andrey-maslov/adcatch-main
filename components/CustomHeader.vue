@@ -8,7 +8,6 @@
             Sign up
           </button>
         </a>
-
         <a class="hidden md:inline-block" :href="loginUrl">
           <button class="ac-button-secondary-outlined">
             Log in
