@@ -68,12 +68,13 @@
 </template>
 
 <script setup>
-import { loginUrl, dashboardUrl, registrationUrl } from '../constants/constants'
+import { loginUrl, dashboardUrl, registrationUrl } from '../constants/constants';
+const loginCookie = useCookie('loggedIn')
 
 const drawer = ref(false);
 const showLogin = ref(true);
 
-if (typeof window !== 'undefined' && window.localStorage.getItem('adcatch') !== null) {
+if (typeof loginCookie.value !== 'undefined') {
   showLogin.value = false;
 }
 </script>
