@@ -84,3 +84,37 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - [Element-plus Nuxt starter](https://github.com/element-plus/element-plus-nuxt-starter)
 
 - Booking demo scheduler - [Calendly](https://nuxt-calendly.vercel.app/)
+
+
+## Font sizes
+
+### headers with other fonts
+- h1 96px = text-8xl
+- h2 64px
+- h3 48px = text-5xl
+- h4 36px = text-4xl
+- h5 32px
+- h6 20px = text-xl
+
+### headers with common font
+- h4 36px bold = text-4xl
+
+### regular text
+- 36px = text-4xl
+- 32px
+- 24px = text-2xl
+
+## Gtag events
+| Event name            | settings |              comments |
+|-----------------------|:--------:|----------------------:|
+| booking_dialog_opened | place: 1 |  1: header; 2: others |
+| linkedin_link_click   |    -     |                       |
+| email_link_click      |    -     |                       |
+
+
+
+## TODO
+- add GTAG ID to envs or directly onto code
+- fix changing view between login and Dashboard links. Use cookie instead of local-storage?
+- remove button 'book a demo' from header when user is logged in
+- hide dev version (railway.app) from bots - robots.txt, etc.
