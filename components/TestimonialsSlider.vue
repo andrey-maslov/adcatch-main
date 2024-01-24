@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { TestimonialItem } from '~/data/data';
+import type { TestimonialItem } from '~/constants/data';
 
 const props = defineProps<{
   items: TestimonialItem[]

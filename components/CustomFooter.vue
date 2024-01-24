@@ -52,7 +52,6 @@ const links = [
 ]
 
 const onLinkClick = (linkType) => {
-  console.log('cl', linkType)
   gtag('event', `${linkType}_link_click`)
 }
 

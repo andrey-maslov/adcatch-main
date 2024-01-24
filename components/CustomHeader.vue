@@ -2,15 +2,23 @@
   <header class="flex items-center justify-between w-full gap-1 px-6 bg-white">
     <CustomLogo />
     <div class="flex items-center gap-2 md:gap-5">
-      <a class="hidden md:inline-block" href="https://app.adcatch.pro/#/registration">
-        <button class="ac-button-secondary">
-          Sign up
-        </button>
-      </a>
+      <div v-if="showLogin">
+        <a class="hidden md:inline-block md:mr-5" :href="registrationUrl">
+          <button class="ac-button-secondary">
+            Sign up
+          </button>
+        </a>
 
-      <a class="hidden md:inline-block" href="https://app.adcatch.pro/#/login">
+        <a class="hidden md:inline-block" :href="loginUrl">
+          <button class="ac-button-secondary-outlined">
+            Log in
+          </button>
+        </a>
+      </div>
+
+      <a v-else class="hidden md:inline-block" :href="dashboardUrl">
         <button class="ac-button-secondary-outlined">
-          Log in
+          Dashboard
         </button>
       </a>
 
@@ -33,23 +41,25 @@
               <CustomLogo size="small" />
             </div>
             <nav class="nav">
-              <div>
-                <a class="flex items-center space-x-2.5" href="https://adcatch.pro/#/dashboard">
+              <div v-if="!showLogin">
+                <a class="flex items-center space-x-2.5" :href="dashboardUrl">
                   <Icon size="24px" :name="`material-symbols:dashboard`" />
                   <span>Dashboard</span>
                 </a>
                 <el-divider />
               </div>
-              <a class="block" href="https://adcatch.pro/#/registration">
-                <button class="ac-button-secondary">
-                  Sign up
-                </button>
-              </a>
-              <a class="block" href="https://adcatch.pro/#/login">
-                <button class="ac-button-secondary-outlined">
-                  Log in
-                </button>
-              </a>
+              <div v-else>
+                <a class="block" :href="registrationUrl">
+                  <button class="ac-button-secondary">
+                    Sign up
+                  </button>
+                </a>
+                <a class="block" :href="loginUrl">
+                  <button class="ac-button-secondary-outlined">
+                    Log in
+                  </button>
+                </a>
+              </div>
             </nav>
           </div>
         </el-drawer>
@@ -59,7 +69,14 @@
 </template>
 
 <script setup>
+import { loginUrl, dashboardUrl, registrationUrl } from '../constants/constants'
+
 const drawer = ref(false);
+const showLogin = ref(true);
+
+if (typeof window !== 'undefined' && window.localStorage.getItem('adcatch') !== null) {
+  showLogin.value = false;
+}
 </script>
 
 <style lang="scss" scoped>

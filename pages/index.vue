@@ -194,7 +194,7 @@
 
 <script setup lang="ts">
 
-import { featuresAudience, features, integrations, testimonials } from '../data/data'
+import { featuresAudience, features, integrations, testimonials } from '~/constants/data'
 
 </script>
 
