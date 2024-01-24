@@ -2,7 +2,7 @@
   <header class="flex items-center justify-between w-full gap-1 px-6 bg-white">
     <CustomLogo />
     <div class="flex items-center gap-2 md:gap-5">
-      <div v-if="showLogin">
+      <div v-if="showLogin && showButtons">
         <a class="hidden md:inline-block md:mr-5" :href="registrationUrl">
           <button class="ac-button-secondary">
             Sign up
@@ -42,7 +42,7 @@
               <CustomLogo size="small" />
             </div>
             <nav class="nav">
-              <div v-if="!showLogin">
+              <div v-if="!showLogin && showButtons">
                 <a class="flex items-center space-x-2.5" :href="dashboardUrl">
                   <Icon size="24px" :name="`material-symbols:dashboard`" />
                   <span>Dashboard</span>
@@ -75,9 +75,13 @@ const loginCookie = useCookie('loggedIn')
 
 const drawer = ref(false);
 const showLogin = ref(true);
+const showButtons = ref(false);
 
 if (typeof loginCookie.value !== 'undefined') {
   showLogin.value = false;
+  showButtons.value = true;
+} else {
+  showButtons.value = true;
 }
 </script>
 
