@@ -20,4 +20,4 @@ landing front deploy:
         - rm -rf /var/www/landing.adcatch.pro/*
         - cp -r /var/www/dev.landing.adcatch.pro/dist/* /var/www/landing.adcatch.pro/
     tags:
-        - adcatch_prod
+        - landing_prod
