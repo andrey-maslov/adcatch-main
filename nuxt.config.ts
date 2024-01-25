@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    // @ts-ignore
+    site: { indexable: false },
+
     devtools: { enabled: true },
 
     app: {
@@ -63,5 +66,5 @@ export default defineNuxtConfig({
         '@nuxtjs/google-fonts',
         'nuxt-icon',
         'nuxt-gtag',
-    ],
+    ]
 })
