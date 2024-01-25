@@ -1,3 +1,19 @@
+// Robots.txt rules for test and staging environments
+const testRules = {
+    userAgent: '*',
+    disallow: '*',
+    host: 'https://adcatch.pro',
+};
+// Robots.txt rules for prod environment
+const prodRules = {
+    userAgent: '*',
+    allow: '/',
+    host: 'https://adcatch.pro',
+};
+
+const robotsRules = process.env.NUXT_PUBLIC_ENV === 'dev' || process.env.NUXT_PUBLIC_ENV === 'staging'
+    ? testRules : prodRules;
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
@@ -63,5 +79,6 @@ export default defineNuxtConfig({
         '@nuxtjs/google-fonts',
         'nuxt-icon',
         'nuxt-gtag',
+        'nuxt-simple-robots'
     ],
 })

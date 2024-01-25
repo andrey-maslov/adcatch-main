@@ -5,7 +5,8 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "NUXT_PUBLIC_GTAG_ID=G-ZBZF8RNVHK nuxt generate",
+    "generate": "NUXT_SITE_ENV=preview nuxt generate",
+    "generate:prod": "NUXT_PUBLIC_GTAG_ID=G-ZBZF8RNVHK NUXT_SITE_ENV=production nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
@@ -24,12 +25,12 @@
     "nuxt-calendly": "^0.1.17",
     "nuxt-gtag": "^1.1.2",
     "nuxt-icon": "^0.6.7",
+    "nuxt-simple-robots": "^4.0.0-rc.13",
     "sass": "^1.69.5",
     "vue": "^3.3.10",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxtjs/robots": "^3.0.0",
     "nuxt-swiper": "^1.2.2",
     "serve": "^14.2.1"
   }

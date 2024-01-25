@@ -16,7 +16,7 @@ landing front deploy:
         - rm -rf /var/www/dev.landing.adcatch.pro/node_modules
         - rm -rf /var/www/dev.landing.adcatch.pro/dist
         - yarn install
-        - yarn generate
+        - yarn generate:prod
         - rm -rf /var/www/landing.adcatch.pro/*
         - cp -r /var/www/dev.landing.adcatch.pro/dist/* /var/www/landing.adcatch.pro/
     tags:
