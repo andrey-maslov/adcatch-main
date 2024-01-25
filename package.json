@@ -5,8 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "NUXT_SITE_ENV=preview nuxt generate",
-    "generate:prod": "NUXT_PUBLIC_GTAG_ID=G-ZBZF8RNVHK NUXT_SITE_ENV=production nuxt generate",
+    "generate": "NUXT_PUBLIC_GTAG_ID=G-ZBZF8RNVHK NUXT_SITE_ENV=production nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
