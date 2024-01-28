@@ -63,5 +63,6 @@ export default defineNuxtConfig({
         '@nuxtjs/google-fonts',
         'nuxt-icon',
         'nuxt-gtag',
+        'nuxt-simple-robots'
     ]
 })
